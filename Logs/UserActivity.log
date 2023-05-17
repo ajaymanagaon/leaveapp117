@@ -1,0 +1,945 @@
+2023-03-23 08:51:52,158 INFO - -------------------------------------------------------------------------------------
+2023-03-23 08:51:52,205 INFO - Logged in by: conraka
+2023-03-23 09:08:04,296 INFO - -------------------------------------------------------------------------------------
+2023-03-23 09:08:04,299 INFO - Logged in by: conajma
+2023-03-23 09:12:33,666 INFO - -------------------------------------------------------------------------------------
+2023-03-23 09:12:33,668 INFO - Logged in by: conpts
+2023-03-23 09:13:11,866 INFO - -------------------------------------------------------------------------------------
+2023-03-23 09:13:11,868 INFO - Logged in by: conasub
+2023-03-23 09:15:11,325 INFO - Employee Details page viewed by : conpts
+2023-03-23 09:18:32,121 INFO - Logged out by user..
+2023-03-23 09:18:32,123 INFO - -------------------------------------------------------------------------------------
+2023-03-23 09:23:07,792 INFO - -------------------------------------------------------------------------------------
+2023-03-23 09:23:07,794 INFO - Logged in by: consshet
+2023-03-23 09:42:41,100 INFO - -------------------------------------------------------------------------------------
+2023-03-23 09:42:41,103 INFO - Logged in by: condkp
+2023-03-23 09:49:21,058 INFO - Logged out by user..
+2023-03-23 10:17:51,985 INFO - -------------------------------------------------------------------------------------
+2023-03-23 10:17:51,986 INFO - Logged in by: congeth
+2023-03-23 10:18:01,778 ERROR - Login attempt failed
+2023-03-23 10:18:01,781 ERROR - Failed to login for conhich
+2023-03-23 10:18:17,700 ERROR - Login attempt failed
+2023-03-23 10:18:17,702 ERROR - Failed to login for conhich
+2023-03-23 10:18:26,240 ERROR - Login attempt failed
+2023-03-23 10:18:26,242 ERROR - Failed to login for conhich
+2023-03-23 10:23:45,608 INFO - -------------------------------------------------------------------------------------
+2023-03-23 10:23:45,610 INFO - Logged in by: conravh
+2023-03-23 10:24:59,131 INFO - Leave applied for conravh on 20/03/2023 by: conravh
+2023-03-23 10:25:35,464 INFO - Logged out by user..
+2023-03-23 10:25:35,466 INFO - -------------------------------------------------------------------------------------
+2023-03-23 10:26:05,492 INFO - -------------------------------------------------------------------------------------
+2023-03-23 10:26:05,494 INFO - Logged in by: conravh
+2023-03-23 10:26:56,276 INFO - Leave applied for conravh on 21/03/2023 by: conravh
+2023-03-23 10:30:04,401 INFO - Logged out by user..
+2023-03-23 10:30:04,403 INFO - -------------------------------------------------------------------------------------
+2023-03-23 10:41:46,748 INFO - Logged out by user..
+2023-03-23 10:41:46,751 INFO - -------------------------------------------------------------------------------------
+2023-03-23 13:11:45,503 INFO - -------------------------------------------------------------------------------------
+2023-03-23 13:11:45,506 INFO - Logged in by: conpts
+2023-03-23 13:12:09,010 INFO - Logged out by user..
+2023-03-23 13:12:09,012 INFO - -------------------------------------------------------------------------------------
+2023-03-23 13:28:48,349 INFO - -------------------------------------------------------------------------------------
+2023-03-23 13:28:48,351 INFO - Logged in by: conasub
+2023-03-23 14:15:37,009 INFO - Employee Details page viewed by : conasub
+2023-03-23 14:16:57,171 ERROR - Exception on /Update profile/0 [POST]
+Traceback (most recent call last):
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "application.py", line 197, in update_profile
+    sb.update_employee(employee)
+  File "C:\LeaveApp\leave-app1.1.7\EmployeeProfileDAL.py", line 404, in update_employee
+    (int(employee.project_id), employee.expertise, int(employee.employee_id)))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2023-03-23 14:17:13,575 INFO - conasub updated profile details
+2023-03-23 14:17:31,026 INFO - conasub updated profile details
+2023-03-23 14:17:55,952 INFO - conasub updated profile details
+2023-03-23 14:18:10,337 INFO - conasub updated profile details
+2023-03-23 14:18:43,561 INFO - conasub updated profile details
+2023-03-23 14:18:54,868 INFO - conasub updated profile details
+2023-03-23 14:19:05,948 INFO - conasub updated profile details
+2023-03-23 14:19:21,424 INFO - conasub updated profile details
+2023-03-23 14:19:33,645 INFO - conasub updated profile details
+2023-03-23 14:19:43,498 INFO - conasub updated profile details
+2023-03-23 14:20:27,405 ERROR - Exception on /Update profile/0 [POST]
+Traceback (most recent call last):
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "application.py", line 197, in update_profile
+    sb.update_employee(employee)
+  File "C:\LeaveApp\leave-app1.1.7\EmployeeProfileDAL.py", line 404, in update_employee
+    (int(employee.project_id), employee.expertise, int(employee.employee_id)))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2023-03-23 14:35:18,547 INFO - -------------------------------------------------------------------------------------
+2023-03-23 14:35:18,548 INFO - Logged in by: conajma
+2023-03-23 14:58:44,405 INFO - -------------------------------------------------------------------------------------
+2023-03-23 14:58:44,407 INFO - Logged in by: conprkur
+2023-03-23 15:55:02,358 INFO - -------------------------------------------------------------------------------------
+2023-03-23 15:55:02,359 INFO - Logged in by: conpoor
+2023-03-23 15:55:48,353 INFO - Leave applied for conpoor on 16/03/2023 by: conpoor
+2023-03-23 15:56:16,160 INFO - Leave applied for conpoor on 17/03/2023 by: conpoor
+2023-03-23 15:59:08,194 INFO - Leave applied for concks on 15/03/2023 by: concks
+2023-03-23 15:59:36,124 INFO - Logged out by user..
+2023-03-23 15:59:36,124 INFO - -------------------------------------------------------------------------------------
+2023-03-23 16:24:02,579 INFO - Employee Details page viewed by : conraka
+2023-03-23 16:24:12,331 INFO - Employee Details page viewed by : conraka
+2023-03-23 16:41:30,386 INFO - Logged out by user..
+2023-03-23 16:41:30,388 INFO - -------------------------------------------------------------------------------------
+2023-03-23 20:01:04,447 INFO - Logged out by user..
+2023-03-23 20:01:04,449 INFO - -------------------------------------------------------------------------------------
+2023-03-24 09:13:13,762 INFO - -------------------------------------------------------------------------------------
+2023-03-24 09:13:13,764 INFO - Logged in by: conajma
+2023-03-24 09:13:50,516 INFO - -------------------------------------------------------------------------------------
+2023-03-24 09:13:50,518 INFO - Logged in by: conraka
+2023-03-24 09:16:45,353 INFO - -------------------------------------------------------------------------------------
+2023-03-24 09:16:45,355 INFO - Logged in by: conshcm
+2023-03-24 09:18:44,379 INFO - Leave applied for conshcm on 23/03/2023 by: conshcm
+2023-03-24 09:18:54,394 INFO - -------------------------------------------------------------------------------------
+2023-03-24 09:18:54,396 INFO - Logged in by: condkp
+2023-03-24 09:23:50,264 INFO - -------------------------------------------------------------------------------------
+2023-03-24 09:23:50,266 INFO - Logged in by: consshet
+2023-03-24 09:27:17,548 INFO - -------------------------------------------------------------------------------------
+2023-03-24 09:27:17,551 INFO - Logged in by: conreat
+2023-03-24 09:39:15,142 INFO - -------------------------------------------------------------------------------------
+2023-03-24 09:39:15,144 INFO - Logged in by: conpts
+2023-03-24 10:03:34,299 INFO - -------------------------------------------------------------------------------------
+2023-03-24 10:03:34,302 INFO - Logged in by: conasub
+2023-03-24 10:16:31,288 INFO - -------------------------------------------------------------------------------------
+2023-03-24 10:16:31,313 INFO - Logged in by: congeth
+2023-03-24 10:16:35,578 INFO - -------------------------------------------------------------------------------------
+2023-03-24 10:16:35,580 INFO - Logged in by: congeth
+2023-03-24 10:16:44,231 INFO - -------------------------------------------------------------------------------------
+2023-03-24 10:16:44,233 INFO - Logged in by: congeth
+2023-03-24 10:17:03,859 INFO - -------------------------------------------------------------------------------------
+2023-03-24 10:17:03,860 INFO - Logged in by: consys
+2023-03-24 10:26:52,563 INFO - -------------------------------------------------------------------------------------
+2023-03-24 10:26:52,566 INFO - Logged in by: conbalc
+2023-03-24 10:28:09,905 INFO - Employee Details page viewed by : conpts
+2023-03-24 10:28:19,554 INFO - Logged out by user..
+2023-03-24 10:28:19,556 INFO - -------------------------------------------------------------------------------------
+2023-03-24 10:43:17,136 INFO - -------------------------------------------------------------------------------------
+2023-03-24 10:43:17,138 INFO - Logged in by: conajma
+2023-03-24 10:43:20,522 INFO - Employee Details page viewed by : conpts
+2023-03-24 10:47:48,579 INFO - Logged out by user..
+2023-03-24 10:47:48,581 INFO - -------------------------------------------------------------------------------------
+2023-03-24 10:48:00,972 INFO - -------------------------------------------------------------------------------------
+2023-03-24 10:48:00,974 INFO - Logged in by: congeth
+2023-03-24 11:00:13,310 INFO - Logged out by user..
+2023-03-24 11:00:13,313 INFO - -------------------------------------------------------------------------------------
+2023-03-24 11:25:21,962 INFO - Logged out by user..
+2023-03-24 11:25:21,964 INFO - -------------------------------------------------------------------------------------
+2023-03-24 12:22:00,227 INFO - Logged out by user..
+2023-03-24 12:22:00,230 INFO - -------------------------------------------------------------------------------------
+2023-03-24 16:19:32,562 INFO - -------------------------------------------------------------------------------------
+2023-03-24 16:19:32,565 INFO - Logged in by: contmg
+2023-03-24 16:21:42,658 INFO - Leave applied for contmg on 09/03/2023 by: contmg
+2023-03-28 09:49:56,696 INFO - -------------------------------------------------------------------------------------
+2023-03-28 09:49:56,699 INFO - Logged in by: consshet
+2023-03-28 10:03:33,157 INFO - -------------------------------------------------------------------------------------
+2023-03-28 10:03:33,158 INFO - Logged in by: conasub
+2023-03-28 10:05:17,880 INFO - -------------------------------------------------------------------------------------
+2023-03-28 10:05:17,883 INFO - Logged in by: conasub
+2023-03-28 10:07:27,284 INFO - -------------------------------------------------------------------------------------
+2023-03-28 10:07:27,285 INFO - Logged in by: conraka
+2023-03-28 10:07:28,168 ERROR - Login attempt failed
+2023-03-28 10:07:28,174 ERROR - Failed to login for conhich
+2023-03-28 10:07:40,819 ERROR - Login attempt failed
+2023-03-28 10:07:40,825 ERROR - Failed to login for conhich
+2023-03-28 10:10:23,101 INFO - -------------------------------------------------------------------------------------
+2023-03-28 10:10:23,102 INFO - Logged in by: conhich
+2023-03-28 10:10:47,480 INFO - -------------------------------------------------------------------------------------
+2023-03-28 10:10:47,482 INFO - Logged in by: conpts
+2023-03-28 10:14:12,771 INFO - -------------------------------------------------------------------------------------
+2023-03-28 10:14:12,773 INFO - Logged in by: conravh
+2023-03-28 10:23:23,782 INFO - Logged out by user..
+2023-03-28 10:23:23,783 INFO - -------------------------------------------------------------------------------------
+2023-03-28 10:47:00,735 INFO - Logged out by user..
+2023-03-28 10:47:00,737 INFO - -------------------------------------------------------------------------------------
+2023-03-28 10:48:21,853 INFO - -------------------------------------------------------------------------------------
+2023-03-28 10:48:21,855 INFO - Logged in by: conraka
+2023-03-28 10:48:34,265 INFO - Logged out by user..
+2023-03-28 10:48:34,266 INFO - -------------------------------------------------------------------------------------
+2023-03-28 12:28:06,922 INFO - -------------------------------------------------------------------------------------
+2023-03-28 12:28:06,925 INFO - Logged in by: congeth
+2023-03-28 14:02:46,514 INFO - -------------------------------------------------------------------------------------
+2023-03-28 14:02:46,517 INFO - Logged in by: conajma
+2023-03-28 14:03:17,094 INFO - Employee Details page viewed by : conajma
+2023-03-28 14:05:24,274 INFO - -------------------------------------------------------------------------------------
+2023-03-28 14:05:24,276 INFO - Logged in by: conknar
+2023-03-28 14:07:00,115 ERROR - Exception on /personalLeave [GET]
+Traceback (most recent call last):
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "application.py", line 719, in personalLeave
+    EmployeeName=(sb.get_current_employee_Info(corpid))[0][0]
+IndexError: list index out of range
+2023-03-28 14:07:17,335 INFO - Employee Details page viewed by : conajma
+2023-03-28 14:08:32,282 INFO - Employee Details page viewed by : conajma
+2023-03-28 14:13:27,604 INFO - Employee Details page viewed by : conajma
+2023-03-28 14:54:11,607 INFO - -------------------------------------------------------------------------------------
+2023-03-28 14:54:11,610 INFO - Logged in by: conpoor
+2023-03-28 15:08:26,559 INFO - Leave applied for consamr on 27/03/2023 by: consamr
+2023-03-28 15:08:45,510 INFO - Leave applied for conpoor on 28/03/2023 by: conpoor
+2023-03-28 15:09:29,732 INFO - Logged out by user..
+2023-03-28 15:09:29,733 INFO - -------------------------------------------------------------------------------------
+2023-03-29 08:38:25,729 INFO - -------------------------------------------------------------------------------------
+2023-03-29 08:38:25,732 INFO - Logged in by: consshet
+2023-03-29 09:20:39,161 INFO - -------------------------------------------------------------------------------------
+2023-03-29 09:20:39,184 INFO - Logged in by: contmg
+2023-03-29 09:20:41,427 INFO - -------------------------------------------------------------------------------------
+2023-03-29 09:20:41,428 INFO - Logged in by: contmg
+2023-03-29 09:20:53,095 INFO - Leave applied for contmg on 10/03/2023 by: contmg
+2023-03-29 09:21:32,429 INFO - -------------------------------------------------------------------------------------
+2023-03-29 09:21:32,431 INFO - Logged in by: contmg
+2023-03-29 09:21:47,081 INFO - Leave applied for contmg on 17/03/2023 by: contmg
+2023-03-29 11:51:21,511 INFO - -------------------------------------------------------------------------------------
+2023-03-29 11:51:21,514 INFO - Logged in by: conrapi
+2023-03-29 11:53:40,129 INFO - Employee Details page viewed by : conrapi
+2023-03-29 12:23:41,749 INFO - Logged out by user..
+2023-03-29 12:23:41,751 INFO - -------------------------------------------------------------------------------------
+2023-03-29 13:16:27,495 ERROR - Exception on /Update profile/0 [POST]
+Traceback (most recent call last):
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "application.py", line 209, in update_profile
+    return redirect(url_for('show_data'))
+  File "C:\LeaveApp\Python\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\LeaveApp\Python\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "C:\LeaveApp\Python\lib\site-packages\werkzeug\routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'show_data'. Did you mean 'jsondata' instead?
+2023-03-30 09:15:27,504 INFO - -------------------------------------------------------------------------------------
+2023-03-30 09:15:27,507 INFO - Logged in by: conajma
+2023-03-30 09:20:43,819 INFO - -------------------------------------------------------------------------------------
+2023-03-30 09:20:43,821 INFO - Logged in by: conasub
+2023-03-30 09:26:11,091 INFO - -------------------------------------------------------------------------------------
+2023-03-30 09:26:11,093 INFO - Logged in by: consshet
+2023-03-30 09:43:24,616 INFO - -------------------------------------------------------------------------------------
+2023-03-30 09:43:24,618 INFO - Logged in by: conraka
+2023-03-30 09:59:37,410 INFO - -------------------------------------------------------------------------------------
+2023-03-30 09:59:37,412 INFO - Logged in by: condkp
+2023-03-30 10:14:53,446 INFO - -------------------------------------------------------------------------------------
+2023-03-30 10:14:53,449 INFO - Logged in by: congeth
+2023-03-30 10:14:54,211 INFO - -------------------------------------------------------------------------------------
+2023-03-30 10:14:54,213 INFO - Logged in by: congeth
+2023-03-30 10:16:14,451 ERROR - Login attempt failed
+2023-03-30 10:16:14,457 ERROR - Failed to login for conhich
+2023-03-30 10:16:42,721 INFO - -------------------------------------------------------------------------------------
+2023-03-30 10:16:42,722 INFO - Logged in by: conhich
+2023-03-30 10:24:40,178 INFO - -------------------------------------------------------------------------------------
+2023-03-30 10:24:40,179 INFO - Logged in by: conpts
+2023-03-30 10:31:08,869 INFO - Logged out by user..
+2023-03-30 10:31:08,871 INFO - -------------------------------------------------------------------------------------
+2023-03-30 10:37:47,983 INFO - Logged out by user..
+2023-03-30 10:37:47,985 INFO - -------------------------------------------------------------------------------------
+2023-03-30 11:17:52,476 INFO - Logged out by user..
+2023-03-30 11:17:52,478 INFO - -------------------------------------------------------------------------------------
+2023-03-30 11:18:02,747 INFO - -------------------------------------------------------------------------------------
+2023-03-30 11:18:02,748 INFO - Logged in by: congeth
+2023-03-30 14:44:50,931 INFO - -------------------------------------------------------------------------------------
+2023-03-30 14:44:50,934 INFO - Logged in by: CONSWBA
+2023-03-30 14:45:01,898 INFO - Leave applied for CONSWBA on 23/03/2023 by: CONSWBA
+2023-03-30 14:45:18,797 INFO - Leave applied for CONSWBA on 27/03/2023 by: CONSWBA
+2023-03-30 14:52:58,458 INFO - -------------------------------------------------------------------------------------
+2023-03-30 14:52:58,459 INFO - Logged in by: conasub
+2023-03-30 15:02:48,314 INFO - -------------------------------------------------------------------------------------
+2023-03-30 15:02:48,315 INFO - Logged in by: conajma
+2023-03-30 15:11:59,572 INFO - Employee Details page viewed by : conajma
+2023-03-30 15:12:27,524 INFO - Employee Details page viewed by : conajma
+2023-03-30 15:15:18,862 INFO - Employee Details page viewed by : conajma
+2023-03-30 16:13:56,432 INFO - Logged out by user..
+2023-03-30 16:13:56,435 INFO - -------------------------------------------------------------------------------------
+2023-03-31 09:07:29,806 INFO - -------------------------------------------------------------------------------------
+2023-03-31 09:07:29,808 INFO - Logged in by: conajma
+2023-03-31 09:16:58,574 INFO - -------------------------------------------------------------------------------------
+2023-03-31 09:16:58,576 INFO - Logged in by: conasub
+2023-03-31 09:33:07,957 INFO - -------------------------------------------------------------------------------------
+2023-03-31 09:33:07,959 INFO - Logged in by: consshet
+2023-03-31 09:47:10,208 INFO - -------------------------------------------------------------------------------------
+2023-03-31 09:47:10,209 INFO - Logged in by: condkp
+2023-03-31 10:01:21,883 INFO - -------------------------------------------------------------------------------------
+2023-03-31 10:01:21,885 INFO - Logged in by: conpts
+2023-03-31 10:06:35,744 INFO - Logged out by user..
+2023-03-31 10:06:35,746 INFO - -------------------------------------------------------------------------------------
+2023-03-31 10:09:28,621 INFO - -------------------------------------------------------------------------------------
+2023-03-31 10:09:28,623 INFO - Logged in by: conhich
+2023-03-31 10:23:17,845 INFO - Logged out by user..
+2023-03-31 10:23:17,847 INFO - -------------------------------------------------------------------------------------
+2023-03-31 10:24:16,166 INFO - -------------------------------------------------------------------------------------
+2023-03-31 10:24:16,167 INFO - Logged in by: congeth
+2023-03-31 11:38:35,411 INFO - Logged out by user..
+2023-03-31 11:38:35,413 INFO - -------------------------------------------------------------------------------------
+2023-03-31 12:00:26,175 INFO - -------------------------------------------------------------------------------------
+2023-03-31 12:00:26,177 INFO - Logged in by: conasub
+2023-03-31 12:01:40,246 INFO - Logged out by user..
+2023-03-31 12:01:40,248 INFO - -------------------------------------------------------------------------------------
+2023-03-31 17:07:07,604 INFO - -------------------------------------------------------------------------------------
+2023-03-31 17:07:07,605 INFO - Logged in by: conajma
+2023-03-31 17:07:14,543 INFO - Employee Details page viewed by : conajma
+2023-04-02 17:10:14,814 INFO - -------------------------------------------------------------------------------------
+2023-04-02 17:10:14,817 INFO - Logged in by: conrako
+2023-04-02 17:10:48,029 INFO - Leave applied for conrako on 08/05/2023 by: conrako
+2023-04-02 17:11:06,698 INFO - Leave applied for conrako on 09/05/2023 by: conrako
+2023-04-02 17:11:38,804 INFO - Leave applied for conrako on 10/05/2023 by: conrako
+2023-04-02 17:11:52,614 INFO - Leave applied for conrako on 11/05/2023 by: conrako
+2023-04-02 17:12:16,622 INFO - Leave applied for conrako on 12/05/2023 by: conrako
+2023-04-02 17:12:33,516 INFO - Logged out by user..
+2023-04-02 17:12:33,518 INFO - -------------------------------------------------------------------------------------
+2023-04-03 09:04:39,512 INFO - -------------------------------------------------------------------------------------
+2023-04-03 09:04:39,514 INFO - Logged in by: conajma
+2023-04-03 09:25:10,206 INFO - -------------------------------------------------------------------------------------
+2023-04-03 09:25:10,208 INFO - Logged in by: consshet
+2023-04-03 09:27:24,918 INFO - -------------------------------------------------------------------------------------
+2023-04-03 09:27:24,920 INFO - Logged in by: conhich
+2023-04-03 09:39:08,968 INFO - -------------------------------------------------------------------------------------
+2023-04-03 09:39:08,970 INFO - Logged in by: condkp
+2023-04-03 09:57:59,502 INFO - -------------------------------------------------------------------------------------
+2023-04-03 09:57:59,504 INFO - Logged in by: conravh
+2023-04-03 09:58:02,348 INFO - -------------------------------------------------------------------------------------
+2023-04-03 09:58:02,350 INFO - Logged in by: conravh
+2023-04-03 10:05:16,973 INFO - -------------------------------------------------------------------------------------
+2023-04-03 10:05:16,975 INFO - Logged in by: conpts
+2023-04-03 10:12:28,318 INFO - Logged out by user..
+2023-04-03 10:12:28,320 INFO - -------------------------------------------------------------------------------------
+2023-04-03 10:12:44,506 INFO - -------------------------------------------------------------------------------------
+2023-04-03 10:12:44,507 INFO - Logged in by: congeth
+2023-04-03 10:31:53,705 INFO - Logged out by user..
+2023-04-03 10:31:53,707 INFO - -------------------------------------------------------------------------------------
+2023-04-03 10:59:00,584 INFO - Logged out by user..
+2023-04-03 10:59:00,587 INFO - -------------------------------------------------------------------------------------
+2023-04-03 11:21:04,519 INFO - -------------------------------------------------------------------------------------
+2023-04-03 11:21:04,521 INFO - Logged in by: consys
+2023-04-03 11:21:13,267 INFO - Employee Details page viewed by : consys
+2023-04-03 11:21:33,029 INFO - consys updated profile details
+2023-04-03 11:36:27,648 INFO - consys updated profile details
+2023-04-03 11:36:41,615 INFO - consys updated profile details
+2023-04-03 14:26:16,974 INFO - -------------------------------------------------------------------------------------
+2023-04-03 14:26:16,976 INFO - Logged in by: consima
+2023-04-03 16:07:48,325 INFO - -------------------------------------------------------------------------------------
+2023-04-03 16:07:48,328 INFO - Logged in by: conrabs
+2023-04-03 16:08:09,265 INFO - Employee Details page viewed by : conrabs
+2023-04-03 16:08:14,437 INFO - Employee Details page viewed by : conrabs
+2023-04-03 16:08:24,055 INFO - Employee Details page viewed by : conrabs
+2023-04-03 16:08:47,659 INFO - Employee Details page viewed by : conrabs
+2023-04-03 16:08:53,911 INFO - Employee Details page viewed by : conrabs
+2023-04-04 09:23:09,804 INFO - -------------------------------------------------------------------------------------
+2023-04-04 09:23:09,807 INFO - Logged in by: consshet
+2023-04-04 09:23:26,295 INFO - -------------------------------------------------------------------------------------
+2023-04-04 09:23:26,297 INFO - Logged in by: conajma
+2023-04-04 09:33:27,456 INFO - -------------------------------------------------------------------------------------
+2023-04-04 09:33:27,458 INFO - Logged in by: conasub
+2023-04-04 09:53:53,507 INFO - -------------------------------------------------------------------------------------
+2023-04-04 09:53:53,510 INFO - Logged in by: conrabs
+2023-04-04 10:06:38,220 INFO - -------------------------------------------------------------------------------------
+2023-04-04 10:06:38,222 INFO - Logged in by: conpts
+2023-04-04 10:07:26,733 INFO - -------------------------------------------------------------------------------------
+2023-04-04 10:07:26,735 INFO - Logged in by: conhich
+2023-04-04 10:07:28,009 INFO - -------------------------------------------------------------------------------------
+2023-04-04 10:07:28,011 INFO - Logged in by: conhich
+2023-04-04 10:09:31,196 INFO - -------------------------------------------------------------------------------------
+2023-04-04 10:09:31,198 INFO - Logged in by: condkp
+2023-04-04 10:14:02,642 INFO - -------------------------------------------------------------------------------------
+2023-04-04 10:14:02,644 INFO - Logged in by: conmahk
+2023-04-04 10:14:21,447 INFO - Employee Details page viewed by : conmahk
+2023-04-04 10:14:31,808 INFO - Logged out by user..
+2023-04-04 10:14:31,809 INFO - -------------------------------------------------------------------------------------
+2023-04-04 10:14:53,009 INFO - -------------------------------------------------------------------------------------
+2023-04-04 10:14:53,011 INFO - Logged in by: congeth
+2023-04-04 10:18:46,576 INFO - -------------------------------------------------------------------------------------
+2023-04-04 10:18:46,578 INFO - Logged in by: condkp
+2023-04-04 10:23:49,555 INFO - Logged out by user..
+2023-04-04 10:23:49,556 INFO - -------------------------------------------------------------------------------------
+2023-04-04 10:24:00,515 INFO - -------------------------------------------------------------------------------------
+2023-04-04 10:24:00,517 INFO - Logged in by: congeth
+2023-04-04 11:10:46,491 INFO - Logged out by user..
+2023-04-04 11:10:46,494 INFO - -------------------------------------------------------------------------------------
+2023-04-04 12:17:27,884 INFO - Logged out by user..
+2023-04-04 12:17:27,887 INFO - -------------------------------------------------------------------------------------
+2023-04-04 12:17:29,167 INFO - Logged out by user..
+2023-04-04 16:40:35,324 INFO - -------------------------------------------------------------------------------------
+2023-04-04 16:40:35,327 INFO - Logged in by: conajma
+2023-04-04 16:40:42,024 INFO - Employee Details page viewed by : conajma
+2023-04-05 08:47:40,109 INFO - -------------------------------------------------------------------------------------
+2023-04-05 08:47:40,112 INFO - Logged in by: conajma
+2023-04-05 09:24:15,302 INFO - -------------------------------------------------------------------------------------
+2023-04-05 09:24:15,304 INFO - Logged in by: consshet
+2023-04-05 09:54:34,026 INFO - -------------------------------------------------------------------------------------
+2023-04-05 09:54:34,029 INFO - Logged in by: conasub
+2023-04-05 10:00:16,384 INFO - -------------------------------------------------------------------------------------
+2023-04-05 10:00:16,385 INFO - Logged in by: condkp
+2023-04-05 10:03:08,913 INFO - -------------------------------------------------------------------------------------
+2023-04-05 10:03:08,915 INFO - Logged in by: conhich
+2023-04-05 10:03:15,109 INFO - -------------------------------------------------------------------------------------
+2023-04-05 10:03:15,110 INFO - Logged in by: conhich
+2023-04-05 10:11:04,865 INFO - -------------------------------------------------------------------------------------
+2023-04-05 10:11:04,866 INFO - Logged in by: conpts
+2023-04-05 10:11:47,615 INFO - Logged out by user..
+2023-04-05 10:11:47,617 INFO - -------------------------------------------------------------------------------------
+2023-04-05 11:42:41,898 INFO - -------------------------------------------------------------------------------------
+2023-04-05 11:42:41,901 INFO - Logged in by: conajma
+2023-04-05 11:44:49,722 INFO - Employee Details page viewed by : conajma
+2023-04-05 11:54:52,981 INFO - Logged out by user..
+2023-04-05 11:54:52,984 INFO - -------------------------------------------------------------------------------------
+2023-04-05 15:08:51,473 ERROR - Login attempt failed
+2023-04-05 15:08:51,476 ERROR - Failed to login for conpts
+2023-04-05 15:09:15,218 INFO - -------------------------------------------------------------------------------------
+2023-04-05 15:09:15,219 INFO - Logged in by: conpts
+2023-04-05 15:09:38,178 INFO - Employee Details page viewed by : conpts
+2023-04-05 15:20:04,714 INFO - Logged out by user..
+2023-04-05 15:20:04,719 INFO - -------------------------------------------------------------------------------------
+2023-04-06 08:41:03,219 INFO - -------------------------------------------------------------------------------------
+2023-04-06 08:41:03,221 INFO - Logged in by: conajma
+2023-04-06 09:05:41,916 INFO - -------------------------------------------------------------------------------------
+2023-04-06 09:05:41,920 INFO - Logged in by: consys
+2023-04-06 09:10:46,267 INFO - Leave applied for conapur on 06/04/2023 by: conapur
+2023-04-06 09:31:14,099 INFO - -------------------------------------------------------------------------------------
+2023-04-06 09:31:14,100 INFO - Logged in by: consshet
+2023-04-06 09:55:52,803 INFO - -------------------------------------------------------------------------------------
+2023-04-06 09:55:52,806 INFO - Logged in by: conasub
+2023-04-06 10:01:05,921 INFO - -------------------------------------------------------------------------------------
+2023-04-06 10:01:05,923 INFO - Logged in by: conhich
+2023-04-06 10:03:37,593 INFO - -------------------------------------------------------------------------------------
+2023-04-06 10:03:37,595 INFO - Logged in by: condkp
+2023-04-06 10:03:42,736 INFO - -------------------------------------------------------------------------------------
+2023-04-06 10:03:42,738 INFO - Logged in by: condkp
+2023-04-06 10:13:03,534 INFO - -------------------------------------------------------------------------------------
+2023-04-06 10:13:03,536 INFO - Logged in by: conajma
+2023-04-06 10:17:19,472 INFO - -------------------------------------------------------------------------------------
+2023-04-06 10:17:19,474 INFO - Logged in by: conpts
+2023-04-06 10:27:28,076 INFO - Employee Details page viewed by : conasub
+2023-04-06 10:32:26,858 INFO - Logged out by user..
+2023-04-06 10:32:26,861 INFO - -------------------------------------------------------------------------------------
+2023-04-06 10:40:37,265 INFO - -------------------------------------------------------------------------------------
+2023-04-06 10:40:37,268 INFO - Logged in by: conpts
+2023-04-06 11:05:33,198 ERROR - Login attempt failed
+2023-04-06 11:05:33,201 ERROR - Failed to login for conpts
+2023-04-06 11:43:00,907 INFO - -------------------------------------------------------------------------------------
+2023-04-06 11:43:00,913 INFO - Logged in by: conasub
+2023-04-06 11:43:08,468 INFO - Employee Details page viewed by : conasub
+2023-04-06 11:45:06,122 INFO - 2356527 added by: conasub
+2023-04-06 12:02:29,090 INFO - Logged out by user..
+2023-04-06 12:02:29,092 INFO - -------------------------------------------------------------------------------------
+2023-04-06 12:19:08,512 ERROR - Login attempt failed
+2023-04-06 12:19:08,515 ERROR - Failed to login for consima
+2023-04-06 12:19:32,237 INFO - -------------------------------------------------------------------------------------
+2023-04-06 12:19:32,239 INFO - Logged in by: consima
+2023-04-06 12:22:59,748 INFO - Employee Details page viewed by : consima
+2023-04-06 12:23:05,007 ERROR - Exception on /labRequest [GET]
+Traceback (most recent call last):
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "application.py", line 784, in labRequest
+    EmployeeName=(sb.get_current_employee_Info(corpid))[0][0]
+IndexError: list index out of range
+2023-04-06 12:23:09,148 ERROR - Exception on /personalLeave [GET]
+Traceback (most recent call last):
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "application.py", line 719, in personalLeave
+    EmployeeName=(sb.get_current_employee_Info(corpid))[0][0]
+IndexError: list index out of range
+2023-04-06 12:24:17,741 INFO - Logged out by user..
+2023-04-06 12:24:17,743 INFO - -------------------------------------------------------------------------------------
+2023-04-06 12:51:46,559 INFO - Logged out by user..
+2023-04-06 12:51:46,562 INFO - -------------------------------------------------------------------------------------
+2023-04-06 17:37:53,518 INFO - -------------------------------------------------------------------------------------
+2023-04-06 17:37:53,520 INFO - Logged in by: conmumo
+2023-04-06 17:38:24,732 INFO - Leave applied for conmumo on 07/04/2023 by: conmumo
+2023-04-06 17:38:33,681 INFO - Leave applied for conmumo on 10/04/2023 by: conmumo
+2023-04-06 17:39:04,871 INFO - Logged out by user..
+2023-04-06 17:39:04,872 INFO - -------------------------------------------------------------------------------------
+2023-04-07 08:58:08,016 INFO - -------------------------------------------------------------------------------------
+2023-04-07 08:58:08,019 INFO - Logged in by: conajma
+2023-04-07 09:17:54,077 INFO - -------------------------------------------------------------------------------------
+2023-04-07 09:17:54,082 INFO - Logged in by: conasub
+2023-04-07 09:25:57,768 INFO - -------------------------------------------------------------------------------------
+2023-04-07 09:25:57,771 INFO - Logged in by: consshet
+2023-04-07 09:47:58,416 INFO - -------------------------------------------------------------------------------------
+2023-04-07 09:47:58,418 INFO - Logged in by: conpts
+2023-04-07 09:50:43,689 INFO - Employee Details page viewed by : conpts
+2023-04-07 09:52:49,207 INFO - Employee Details page viewed by : conpts
+2023-04-07 09:52:50,773 INFO - Logged out by user..
+2023-04-07 09:52:50,774 INFO - -------------------------------------------------------------------------------------
+2023-04-07 10:06:37,782 INFO - -------------------------------------------------------------------------------------
+2023-04-07 10:06:37,784 INFO - Logged in by: conhich
+2023-04-07 10:06:46,869 INFO - -------------------------------------------------------------------------------------
+2023-04-07 10:06:46,877 INFO - Logged in by: conhich
+2023-04-07 10:08:16,680 INFO - Employee Details page viewed by : conasub
+2023-04-07 10:17:53,416 INFO - -------------------------------------------------------------------------------------
+2023-04-07 10:17:53,418 INFO - Logged in by: congeth
+2023-04-07 10:18:05,491 INFO - -------------------------------------------------------------------------------------
+2023-04-07 10:18:05,493 INFO - Logged in by: congeth
+2023-04-07 10:18:08,269 INFO - -------------------------------------------------------------------------------------
+2023-04-07 10:18:08,277 INFO - Logged in by: congeth
+2023-04-07 10:39:44,670 INFO - Logged out by user..
+2023-04-07 10:39:44,670 INFO - -------------------------------------------------------------------------------------
+2023-04-07 10:40:02,962 INFO - -------------------------------------------------------------------------------------
+2023-04-07 10:40:02,966 INFO - Logged in by: congeth
+2023-04-07 16:45:28,532 INFO - -------------------------------------------------------------------------------------
+2023-04-07 16:45:28,535 INFO - Logged in by: conpoor
+2023-04-07 16:45:43,425 INFO - Leave applied for concks on 10/04/2023 by: concks
+2023-04-07 16:45:55,255 INFO - Logged out by user..
+2023-04-07 16:45:55,256 INFO - -------------------------------------------------------------------------------------
+2023-04-10 08:58:50,893 INFO - -------------------------------------------------------------------------------------
+2023-04-10 08:58:50,895 INFO - Logged in by: conajma
+2023-04-10 09:03:59,334 INFO - -------------------------------------------------------------------------------------
+2023-04-10 09:03:59,335 INFO - Logged in by: conpubh
+2023-04-10 09:14:57,438 INFO - -------------------------------------------------------------------------------------
+2023-04-10 09:14:57,440 INFO - Logged in by: consys
+2023-04-10 09:15:00,463 INFO - -------------------------------------------------------------------------------------
+2023-04-10 09:15:00,465 INFO - Logged in by: consys
+2023-04-10 09:18:03,857 INFO - Leave applied for conapur on 07/04/2023 by: conapur
+2023-04-10 09:18:09,042 INFO - Leave applied for conapur on 10/04/2023 by: conapur
+2023-04-10 09:19:15,587 INFO - -------------------------------------------------------------------------------------
+2023-04-10 09:19:15,588 INFO - Logged in by: conpts
+2023-04-10 09:23:33,363 INFO - Employee Details page viewed by : conpts
+2023-04-10 09:24:41,921 INFO - Logged out by user..
+2023-04-10 09:24:41,923 INFO - -------------------------------------------------------------------------------------
+2023-04-10 09:24:44,329 INFO - -------------------------------------------------------------------------------------
+2023-04-10 09:24:44,331 INFO - Logged in by: consshet
+2023-04-10 09:54:45,745 INFO - -------------------------------------------------------------------------------------
+2023-04-10 09:54:45,747 INFO - Logged in by: conrabs
+2023-04-10 09:55:39,600 INFO - -------------------------------------------------------------------------------------
+2023-04-10 09:55:39,602 INFO - Logged in by: conasub
+2023-04-10 09:59:14,164 INFO - -------------------------------------------------------------------------------------
+2023-04-10 09:59:14,165 INFO - Logged in by: condkp
+2023-04-10 10:06:48,322 INFO - Logged out by user..
+2023-04-10 10:08:11,307 INFO - -------------------------------------------------------------------------------------
+2023-04-10 10:08:11,309 INFO - Logged in by: conhich
+2023-04-10 10:24:58,906 INFO - -------------------------------------------------------------------------------------
+2023-04-10 10:24:58,907 INFO - Logged in by: conajma
+2023-04-10 10:25:10,161 INFO - Employee Details page viewed by : conajma
+2023-04-10 10:32:40,497 INFO - Logged out by user..
+2023-04-10 10:33:00,960 INFO - -------------------------------------------------------------------------------------
+2023-04-10 10:33:00,962 INFO - Logged in by: congeth
+2023-04-10 10:40:38,698 INFO - -------------------------------------------------------------------------------------
+2023-04-10 10:40:38,700 INFO - Logged in by: condkp
+2023-04-10 10:44:06,253 INFO - Employee Details page viewed by : conajma
+2023-04-10 10:47:27,346 INFO - -------------------------------------------------------------------------------------
+2023-04-10 10:47:27,347 INFO - Logged in by: conravh
+2023-04-10 10:53:57,373 INFO - Employee Details page viewed by : conajma
+2023-04-10 11:17:31,356 INFO - Employee Details page viewed by : conajma
+2023-04-10 13:28:28,508 INFO - Logged out by user..
+2023-04-10 13:28:28,512 INFO - -------------------------------------------------------------------------------------
+2023-04-10 14:42:52,762 INFO - Logged out by user..
+2023-04-11 08:54:30,440 INFO - -------------------------------------------------------------------------------------
+2023-04-11 08:54:30,443 INFO - Logged in by: conajma
+2023-04-11 09:13:51,642 INFO - -------------------------------------------------------------------------------------
+2023-04-11 09:13:51,644 INFO - Logged in by: consys
+2023-04-11 09:14:27,144 INFO - Leave applied for conapur on 11/04/2023 by: conapur
+2023-04-11 09:25:52,155 INFO - -------------------------------------------------------------------------------------
+2023-04-11 09:25:52,158 INFO - Logged in by: consshet
+2023-04-11 09:29:32,562 INFO - -------------------------------------------------------------------------------------
+2023-04-11 09:29:32,564 INFO - Logged in by: conpts
+2023-04-11 09:37:44,593 INFO - Employee Details page viewed by : conpts
+2023-04-11 09:43:52,608 INFO - Logged out by user..
+2023-04-11 09:44:06,179 INFO - conpts updated profile details
+2023-04-11 09:44:29,303 INFO - -------------------------------------------------------------------------------------
+2023-04-11 09:44:29,305 INFO - Logged in by: conhich
+2023-04-11 09:44:54,608 INFO - conpts updated profile details
+2023-04-11 09:45:29,221 INFO - conpts updated profile details
+2023-04-11 09:45:49,264 INFO - conpts updated profile details
+2023-04-11 09:46:05,383 INFO - conpts updated profile details
+2023-04-11 09:47:44,680 INFO - -------------------------------------------------------------------------------------
+2023-04-11 09:47:44,682 INFO - Logged in by: conraka
+2023-04-11 09:53:57,634 INFO - Logged out by user..
+2023-04-11 09:53:57,637 INFO - -------------------------------------------------------------------------------------
+2023-04-11 10:00:30,041 INFO - -------------------------------------------------------------------------------------
+2023-04-11 10:00:30,043 INFO - Logged in by: conasub
+2023-04-11 10:06:42,455 INFO - -------------------------------------------------------------------------------------
+2023-04-11 10:06:42,456 INFO - Logged in by: condkp
+2023-04-11 10:17:00,044 INFO - -------------------------------------------------------------------------------------
+2023-04-11 10:17:00,046 INFO - Logged in by: congeth
+2023-04-11 11:35:31,217 INFO - Logged out by user..
+2023-04-11 11:35:31,218 INFO - -------------------------------------------------------------------------------------
+2023-04-11 14:33:17,376 INFO - -------------------------------------------------------------------------------------
+2023-04-11 14:33:17,379 INFO - Logged in by: consys
+2023-04-12 09:18:41,482 INFO - -------------------------------------------------------------------------------------
+2023-04-12 09:18:41,485 INFO - Logged in by: conpts
+2023-04-12 09:18:46,140 INFO - -------------------------------------------------------------------------------------
+2023-04-12 09:18:46,140 INFO - Logged in by: conravh
+2023-04-12 09:20:44,400 INFO - Employee Details page viewed by : conpts
+2023-04-12 09:20:47,212 INFO - Employee Details page viewed by : conpts
+2023-04-12 09:20:59,539 INFO - conpts updated profile details
+2023-04-12 09:21:12,063 INFO - conpts updated profile details
+2023-04-12 09:21:22,778 INFO - conpts updated profile details
+2023-04-12 09:21:32,775 INFO - conpts updated profile details
+2023-04-12 09:21:44,502 INFO - conpts updated profile details
+2023-04-12 09:22:00,025 INFO - conpts updated profile details
+2023-04-12 09:22:11,342 INFO - Logged out by user..
+2023-04-12 09:22:11,343 INFO - -------------------------------------------------------------------------------------
+2023-04-12 09:22:18,634 INFO - conpts updated profile details
+2023-04-12 09:22:29,256 INFO - Employee Details page viewed by : conpts
+2023-04-12 09:23:24,482 INFO - Logged out by user..
+2023-04-12 09:23:24,484 INFO - -------------------------------------------------------------------------------------
+2023-04-12 09:29:26,933 INFO - -------------------------------------------------------------------------------------
+2023-04-12 09:29:26,935 INFO - Logged in by: consshet
+2023-04-12 09:37:18,399 INFO - -------------------------------------------------------------------------------------
+2023-04-12 09:37:18,402 INFO - Logged in by: conajma
+2023-04-12 10:04:59,813 INFO - -------------------------------------------------------------------------------------
+2023-04-12 10:04:59,815 INFO - Logged in by: condkp
+2023-04-12 10:13:07,659 INFO - -------------------------------------------------------------------------------------
+2023-04-12 10:13:07,662 INFO - Logged in by: conhich
+2023-04-12 11:57:43,550 INFO - -------------------------------------------------------------------------------------
+2023-04-12 11:57:43,552 INFO - Logged in by: conajma
+2023-04-13 08:44:28,214 INFO - -------------------------------------------------------------------------------------
+2023-04-13 08:44:28,217 INFO - Logged in by: conlas
+2023-04-13 08:44:30,090 INFO - -------------------------------------------------------------------------------------
+2023-04-13 08:44:30,092 INFO - Logged in by: conlas
+2023-04-13 09:00:38,517 INFO - -------------------------------------------------------------------------------------
+2023-04-13 09:00:38,519 INFO - Logged in by: conlas
+2023-04-13 09:00:43,055 INFO - -------------------------------------------------------------------------------------
+2023-04-13 09:00:43,057 INFO - Logged in by: conpts
+2023-04-13 09:01:40,196 INFO - Leave applied for conlas on 11/04/2023 by: conlas
+2023-04-13 09:02:27,010 INFO - Employee Details page viewed by : conlas
+2023-04-13 09:06:37,064 INFO - -------------------------------------------------------------------------------------
+2023-04-13 09:06:37,066 INFO - Logged in by: conajma
+2023-04-13 09:07:46,468 INFO - Logged out by user..
+2023-04-13 09:07:46,470 INFO - -------------------------------------------------------------------------------------
+2023-04-13 09:23:03,668 INFO - -------------------------------------------------------------------------------------
+2023-04-13 09:23:03,669 INFO - Logged in by: consshet
+2023-04-13 09:23:23,140 ERROR - Login attempt failed
+2023-04-13 09:23:23,146 ERROR - Failed to login for conasub
+2023-04-13 09:23:47,608 INFO - -------------------------------------------------------------------------------------
+2023-04-13 09:23:47,610 INFO - Logged in by: conasub
+2023-04-13 09:33:32,932 ERROR - Login attempt failed
+2023-04-13 09:33:32,938 ERROR - Failed to login for conpts
+2023-04-13 09:33:53,771 INFO - -------------------------------------------------------------------------------------
+2023-04-13 09:33:53,773 INFO - Logged in by: conpts
+2023-04-13 09:35:11,568 INFO - Logged out by user..
+2023-04-13 09:35:11,571 INFO - -------------------------------------------------------------------------------------
+2023-04-13 09:56:19,017 INFO - -------------------------------------------------------------------------------------
+2023-04-13 09:56:19,020 INFO - Logged in by: conhich
+2023-04-13 10:02:06,831 INFO - -------------------------------------------------------------------------------------
+2023-04-13 10:02:06,833 INFO - Logged in by: condkp
+2023-04-13 10:16:54,055 ERROR - Login attempt failed
+2023-04-13 10:16:54,061 ERROR - Failed to login for conravh
+2023-04-13 10:17:14,011 ERROR - Login attempt failed
+2023-04-13 10:17:14,017 ERROR - Failed to login for conravh
+2023-04-13 10:17:38,499 ERROR - Login attempt failed
+2023-04-13 10:17:38,505 ERROR - Failed to login for conravh
+2023-04-13 10:37:01,618 INFO - Logged out by user..
+2023-04-13 10:37:01,620 INFO - -------------------------------------------------------------------------------------
+2023-04-13 10:39:08,034 ERROR - Login attempt failed
+2023-04-13 10:39:08,039 ERROR - Failed to login for conpts
+2023-04-13 10:39:53,207 ERROR - Login attempt failed
+2023-04-13 10:39:53,213 ERROR - Failed to login for conpts
+2023-04-13 14:36:32,500 ERROR - Login attempt failed
+2023-04-13 14:36:32,506 ERROR - Failed to login for conbrra@partner.waters.com
+2023-04-13 14:36:39,282 ERROR - Login attempt failed
+2023-04-13 14:36:39,288 ERROR - Failed to login for conbrra
+2023-04-13 14:55:18,965 ERROR - Login attempt failed
+2023-04-13 14:55:18,972 ERROR - Failed to login for conbrra
+2023-04-13 14:56:05,783 INFO - -------------------------------------------------------------------------------------
+2023-04-13 14:56:05,784 INFO - Logged in by: conbrra
+2023-04-13 14:57:34,655 ERROR - Exception on /personalLeave [GET]
+Traceback (most recent call last):
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\LeaveApp\Python\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LeaveApp\Python\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "application.py", line 719, in personalLeave
+    EmployeeName=(sb.get_current_employee_Info(corpid))[0][0]
+IndexError: list index out of range
+2023-04-13 14:58:03,086 INFO - -------------------------------------------------------------------------------------
+2023-04-13 14:58:03,088 INFO - Logged in by: conbrra
+2023-04-14 09:07:32,123 INFO - -------------------------------------------------------------------------------------
+2023-04-14 09:07:32,126 INFO - Logged in by: conravh
+2023-04-14 09:08:33,516 INFO - -------------------------------------------------------------------------------------
+2023-04-14 09:08:33,517 INFO - Logged in by: conajma
+2023-04-14 09:11:09,367 INFO - Employee Details page viewed by : conravh
+2023-04-14 09:13:57,662 INFO - Logged out by user..
+2023-04-14 09:13:57,664 INFO - -------------------------------------------------------------------------------------
+2023-04-14 09:21:22,573 ERROR - Login attempt failed
+2023-04-14 09:21:22,578 ERROR - Failed to login for conpts
+2023-04-14 09:21:39,016 INFO - -------------------------------------------------------------------------------------
+2023-04-14 09:21:39,018 INFO - Logged in by: conpts
+2023-04-14 09:31:47,955 INFO - -------------------------------------------------------------------------------------
+2023-04-14 09:31:47,957 INFO - Logged in by: consshet
+2023-04-14 09:41:14,503 INFO - Logged out by user..
+2023-04-14 09:41:14,506 INFO - -------------------------------------------------------------------------------------
+2023-04-14 09:51:57,516 INFO - -------------------------------------------------------------------------------------
+2023-04-14 09:51:57,517 INFO - Logged in by: conhich
+2023-04-14 10:17:20,927 ERROR - Login attempt failed
+2023-04-14 10:17:20,933 ERROR - Failed to login for congeth
+2023-04-14 10:17:21,089 ERROR - Login attempt failed
+2023-04-14 10:17:21,095 ERROR - Failed to login for congeth
+2023-04-14 10:17:58,053 ERROR - Login attempt failed
+2023-04-14 10:17:58,059 ERROR - Failed to login for congeth
+2023-04-14 10:18:14,019 ERROR - Login attempt failed
+2023-04-14 10:18:14,025 ERROR - Failed to login for congeth
+2023-04-14 10:18:51,889 ERROR - Login attempt failed
+2023-04-14 10:18:51,895 ERROR - Failed to login for congeth
+2023-04-14 10:29:27,000 ERROR - Login attempt failed
+2023-04-14 10:29:27,006 ERROR - Failed to login for congeth
+2023-04-14 11:00:04,121 INFO - Logged out by user..
+2023-04-14 11:00:04,122 INFO - -------------------------------------------------------------------------------------
+2023-04-14 11:07:03,335 ERROR - Login attempt failed
+2023-04-14 11:07:03,338 ERROR - Failed to login for congeth
+2023-04-14 11:18:03,605 ERROR - Login attempt failed
+2023-04-14 11:18:03,607 ERROR - Failed to login for congeth
+2023-04-14 11:23:42,229 INFO - -------------------------------------------------------------------------------------
+2023-04-14 11:23:42,231 INFO - Logged in by: conajma
+2023-04-14 11:26:26,401 INFO - -------------------------------------------------------------------------------------
+2023-04-14 11:26:26,403 INFO - Logged in by: conhich
+2023-04-14 11:26:27,108 INFO - -------------------------------------------------------------------------------------
+2023-04-14 11:26:27,109 INFO - Logged in by: conhich
+2023-04-14 11:35:47,326 INFO - Employee Details page viewed by : conajma
+2023-04-14 11:37:33,191 INFO - Employee Details page viewed by : conajma
+2023-04-14 11:38:03,591 INFO - conajma updated profile details
+2023-04-14 13:17:17,913 INFO - -------------------------------------------------------------------------------------
+2023-04-14 13:17:17,916 INFO - Logged in by: conajma
+2023-04-17 08:57:40,735 INFO - -------------------------------------------------------------------------------------
+2023-04-17 08:57:40,737 INFO - Logged in by: conpts
+2023-04-17 09:16:01,555 INFO - -------------------------------------------------------------------------------------
+2023-04-17 09:16:01,557 INFO - Logged in by: conhich
+2023-04-17 09:25:10,244 INFO - -------------------------------------------------------------------------------------
+2023-04-17 09:25:10,247 INFO - Logged in by: conpts
+2023-04-17 09:29:17,112 INFO - -------------------------------------------------------------------------------------
+2023-04-17 09:29:17,114 INFO - Logged in by: conajma
+2023-04-17 09:29:30,466 INFO - -------------------------------------------------------------------------------------
+2023-04-17 09:29:30,468 INFO - Logged in by: consshet
+2023-04-17 09:39:35,011 INFO - -------------------------------------------------------------------------------------
+2023-04-17 09:39:35,013 INFO - Logged in by: condkp
+2023-04-17 09:39:47,437 INFO - -------------------------------------------------------------------------------------
+2023-04-17 09:39:47,439 INFO - Logged in by: condkp
+2023-04-17 09:40:51,632 INFO - Logged out by user..
+2023-04-17 09:40:51,634 INFO - -------------------------------------------------------------------------------------
+2023-04-17 09:43:41,123 INFO - -------------------------------------------------------------------------------------
+2023-04-17 09:43:41,125 INFO - Logged in by: conasub
+2023-04-17 09:50:00,561 INFO - -------------------------------------------------------------------------------------
+2023-04-17 09:50:00,563 INFO - Logged in by: conraka
+2023-04-17 11:58:14,053 INFO - Logged out by user..
+2023-04-17 11:58:14,057 INFO - -------------------------------------------------------------------------------------
+2023-04-17 12:00:41,924 INFO - -------------------------------------------------------------------------------------
+2023-04-17 12:00:41,926 INFO - Logged in by: conajma
+2023-04-17 12:01:07,248 INFO - Employee Details page viewed by : conajma
+2023-04-18 09:03:19,828 INFO - -------------------------------------------------------------------------------------
+2023-04-18 09:03:19,831 INFO - Logged in by: conajma
+2023-04-18 09:06:00,968 INFO - -------------------------------------------------------------------------------------
+2023-04-18 09:06:00,970 INFO - Logged in by: conpts
+2023-04-18 09:10:41,021 INFO - Logged out by user..
+2023-04-18 09:10:41,023 INFO - -------------------------------------------------------------------------------------
+2023-04-18 09:24:11,066 INFO - -------------------------------------------------------------------------------------
+2023-04-18 09:24:11,069 INFO - Logged in by: consshet
+2023-04-18 09:30:27,678 INFO - -------------------------------------------------------------------------------------
+2023-04-18 09:30:27,680 INFO - Logged in by: condkp
+2023-04-18 09:31:47,054 INFO - -------------------------------------------------------------------------------------
+2023-04-18 09:31:47,056 INFO - Logged in by: conraka
+2023-04-18 10:10:30,016 INFO - -------------------------------------------------------------------------------------
+2023-04-18 10:10:30,019 INFO - Logged in by: conravh
+2023-04-18 10:15:17,324 INFO - Logged out by user..
+2023-04-18 10:15:17,325 INFO - -------------------------------------------------------------------------------------
+2023-04-18 10:18:34,122 INFO - -------------------------------------------------------------------------------------
+2023-04-18 10:18:34,124 INFO - Logged in by: condkp
+2023-04-18 10:37:05,037 INFO - -------------------------------------------------------------------------------------
+2023-04-18 10:37:05,039 INFO - Logged in by: conravh
+2023-04-18 10:38:06,027 INFO - Logged out by user..
+2023-04-18 10:38:06,030 INFO - -------------------------------------------------------------------------------------
+2023-04-18 11:55:41,988 ERROR - Login attempt failed
+2023-04-18 11:55:41,994 ERROR - Failed to login for conajma
+2023-04-18 11:56:09,940 INFO - -------------------------------------------------------------------------------------
+2023-04-18 11:56:09,941 INFO - Logged in by: conajma
+2023-04-18 11:56:16,620 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:10:23,314 INFO - -------------------------------------------------------------------------------------
+2023-04-18 12:10:23,316 INFO - Logged in by: conajma
+2023-04-18 12:10:31,434 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:12:49,631 INFO - -------------------------------------------------------------------------------------
+2023-04-18 12:12:49,634 INFO - Logged in by: conajma
+2023-04-18 12:12:51,770 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:14:10,471 INFO - -------------------------------------------------------------------------------------
+2023-04-18 12:14:10,473 INFO - Logged in by: conajma
+2023-04-18 12:14:25,309 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:17:42,398 INFO - -------------------------------------------------------------------------------------
+2023-04-18 12:17:42,401 INFO - Logged in by: conajma
+2023-04-18 12:18:01,206 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:21:36,874 INFO - -------------------------------------------------------------------------------------
+2023-04-18 12:21:36,875 INFO - Logged in by: conajma
+2023-04-18 12:21:38,705 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:22:13,355 INFO - 2480019 added by: conajma
+2023-04-18 12:31:31,415 INFO - -------------------------------------------------------------------------------------
+2023-04-18 12:31:31,418 INFO - Logged in by: conajma
+2023-04-18 12:31:44,075 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:35:41,899 INFO - -------------------------------------------------------------------------------------
+2023-04-18 12:35:41,901 INFO - Logged in by: conajma
+2023-04-18 12:35:44,102 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:36:26,798 INFO - 2480020 added by: conajma
+2023-04-18 12:38:07,822 ERROR - Exception on /Update profile/0 [POST]
+Traceback (most recent call last):
+  File "C:\Users\conajma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\conajma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\conajma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\conajma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "application.py", line 202, in update_profile
+    employee = Employee(employee_id, employee_name, project_id, project_name, corpIdM, email, department, employeeODCStatus,expertise)
+TypeError: __init__() missing 1 required positional argument: 'employeeLevel'
+2023-04-18 12:41:09,517 INFO - -------------------------------------------------------------------------------------
+2023-04-18 12:41:09,519 INFO - Logged in by: conajma
+2023-04-18 12:41:11,444 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:41:33,900 INFO - conajma updated profile details
+2023-04-18 12:42:07,468 INFO - conajma updated profile details
+2023-04-18 12:46:56,530 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:49:54,970 INFO - -------------------------------------------------------------------------------------
+2023-04-18 12:49:54,971 INFO - Logged in by: conajma
+2023-04-18 12:50:00,730 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:50:00,755 ERROR - Exception on /employee details [GET]
+Traceback (most recent call last):
+  File "C:\Users\conajma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\conajma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\conajma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\conajma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "application.py", line 248, in list_all_users
+    return render_template("Dashboard.html", rowTable=row_return, **locals())
+  File "C:\Users\conajma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\conajma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\conajma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\conajma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\ProjectArea\waters-leave-app\leave-app1.1.7\templates\Dashboard.html", line 1, in top-level template code
+    {% extends "layout.html" %}
+  File "C:\ProjectArea\waters-leave-app\leave-app1.1.7\templates\layout.html", line 62, in top-level template code
+    {% block body %}
+  File "C:\ProjectArea\waters-leave-app\leave-app1.1.7\templates\Dashboard.html", line 39, in block 'body'
+    {% for row in rowTable %}
+TypeError: 'NoneType' object is not iterable
+2023-04-18 12:51:05,822 INFO - -------------------------------------------------------------------------------------
+2023-04-18 12:51:05,826 INFO - Logged in by: conajma
+2023-04-18 12:51:09,605 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:53:16,128 INFO - -------------------------------------------------------------------------------------
+2023-04-18 12:53:16,132 INFO - Logged in by: conajma
+2023-04-18 12:53:37,089 INFO - Employee Details page viewed by : conajma
+2023-04-18 12:58:56,658 INFO - -------------------------------------------------------------------------------------
+2023-04-18 12:58:56,662 INFO - Logged in by: conajma
+2023-04-18 12:59:06,162 INFO - Employee Details page viewed by : conajma
+2023-04-18 13:01:17,429 INFO - -------------------------------------------------------------------------------------
+2023-04-18 13:01:17,432 INFO - Logged in by: conajma
+2023-04-18 13:01:21,154 INFO - Employee Details page viewed by : conajma
+2023-04-18 13:02:37,434 INFO - -------------------------------------------------------------------------------------
+2023-04-18 13:02:37,435 INFO - Logged in by: conajma
+2023-04-18 13:03:02,815 INFO - Employee Details page viewed by : conajma
+2023-04-18 13:06:25,417 INFO - Employee Details page viewed by : conajma
+2023-04-18 13:06:35,076 INFO - conajma updated profile details
+2023-04-18 13:07:22,434 INFO - 1235689 added by: conajma
+2023-04-18 13:09:23,569 INFO - 1235698 added by: conajma
+2023-04-18 13:10:46,181 INFO - -------------------------------------------------------------------------------------
+2023-04-18 13:10:46,183 INFO - Logged in by: conajma
+2023-04-18 13:10:52,811 INFO - Employee Details page viewed by : conajma
+2023-04-18 13:16:30,798 INFO - -------------------------------------------------------------------------------------
+2023-04-18 13:16:30,798 INFO - Logged in by: conajma
+2023-04-18 13:16:32,914 INFO - Employee Details page viewed by : conajma
+2023-04-18 13:47:06,510 INFO - -------------------------------------------------------------------------------------
+2023-04-18 13:47:06,511 INFO - Logged in by: conajma
+2023-04-18 13:47:13,464 INFO - Employee Details page viewed by : conajma
+2023-04-18 13:55:22,977 INFO - -------------------------------------------------------------------------------------
+2023-04-18 13:55:22,979 INFO - Logged in by: conajma
+2023-04-18 13:57:33,180 INFO - Employee Details page viewed by : conajma
+2023-04-18 13:58:13,620 INFO - 1234567 added by: conajma
+2023-04-18 13:58:33,024 INFO - Logged out by user..
+2023-04-18 13:58:33,026 INFO - -------------------------------------------------------------------------------------
+2023-04-18 17:31:14,037 INFO - -------------------------------------------------------------------------------------
+2023-04-18 17:31:14,041 INFO - Logged in by: conajma
+2023-04-18 17:31:17,197 INFO - Employee Details page viewed by : conajma
+2023-05-08 17:36:20,313 ERROR - Login attempt failed
+2023-05-08 17:36:20,315 ERROR - Failed to login for conajma
+2023-05-08 17:39:38,663 ERROR - Login attempt failed
+2023-05-08 17:39:38,668 ERROR - Failed to login for conajma
+2023-05-08 17:39:57,937 ERROR - Login attempt failed
+2023-05-08 17:39:57,938 ERROR - Failed to login for conajma
+2023-05-08 17:41:10,789 INFO - -------------------------------------------------------------------------------------
+2023-05-08 17:41:10,791 INFO - Logged in by: conajma
+2023-05-15 15:51:06,250 INFO - -------------------------------------------------------------------------------------
+2023-05-15 15:51:06,255 INFO - Logged in by: conajma
+2023-05-15 15:51:51,600 INFO - Employee Details page viewed by : conajma
+2023-05-15 15:52:13,300 INFO - Employee Details page viewed by : conajma
+2023-05-17 16:04:50,371 ERROR - Login attempt failed
+2023-05-17 16:04:50,377 ERROR - Failed to login for conajma
+2023-05-17 16:05:27,919 INFO - -------------------------------------------------------------------------------------
+2023-05-17 16:05:27,922 INFO - Logged in by: conajma
+2023-05-17 16:05:51,902 INFO - Employee Details page viewed by : conajma
+2023-05-17 16:06:02,358 INFO - conajma updated profile details
+2023-05-17 16:06:11,041 INFO - conajma updated profile details
+2023-05-17 16:06:22,953 INFO - Leave applied for conajma on 17/05/2023 by: conajma

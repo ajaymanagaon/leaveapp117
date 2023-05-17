@@ -1,0 +1,468 @@
+{
+	"project details":[
+				{
+					"projectName":"MassLynx Peptide QUAN Project",
+					"projectId":99357,
+					"department":"Informatics"
+				},
+				{
+					"projectName":"MassLynx",
+					"projectId":98277,
+					"department":"Informatics"
+				},
+				{
+					"projectName":"Purification MassLynx Enhancements",
+					"projectId":110266,
+					"department":"Separations"
+				},
+				{
+					"projectName":"ISCAP",
+					"projectId":98619,
+					"department":"Separations"
+				},
+                {
+					"projectName":"FractionLynx Support",
+					"projectId":98358,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"UNIFI - MS ICS",
+					"projectId":98356,
+					"department":"MS ICS"
+				},
+                {
+					"projectName":"3rd Party Driver Support",
+					"projectId":99359,
+					"department":"Informatics"
+				},				
+                {
+					"projectName":"AMS",
+					"projectId":98048,
+					"department":"other"
+				},
+				{
+					"projectName":"3767 Support",
+					"projectId":99942,
+					"department":"Separations"
+				},
+				{
+					"projectName":"Nutcracker Support",
+					"projectId":100457,
+					"department":"Informatics"
+				},	
+				{
+					"projectName":"8890 Support",
+					"projectId":100999,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"Onsite UK",
+					"projectId":97097,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"Onsite US",
+					"projectId":97097,
+					"department":"Informatics"
+				},	
+                {
+					"projectName":"Sciex 3rd Party CDS",
+					"projectId":102066,
+					"department":"Informatics"
+				},	
+                {
+					"projectName":"ICF Lab Manager CY2020",
+					"projectId":102010,
+					"department":"Informatics"
+				},					
+				{
+					"projectName":"AMS Evaluation UK",
+					"projectId":103949,
+					"department":"other"
+				}, 
+				{
+					"projectName":"MS UNIFI Onsite PM UK",
+					"projectId":97097,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"AMS Onsite UK",
+					"projectId":99356,
+					"department":"AMS"
+				},
+                {
+					"projectName":"CTC PAL3 Onsite UK",
+					"projectId":99843,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"Mantis onsite UK",
+					"projectId":100852,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"MassLynx Wilmslow onsite UK",
+					"projectId":101052,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"Senior ICF Engineer US",
+					"projectId":101687,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"Senior DevOps Engineer US",
+					"projectId":101237,
+					"department":"None"
+				},
+                {
+					"projectName":"3rd Party - Senior Software En US",
+					"projectId":101688,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"3rd Party CDS Development Scies US",
+					"projectId":102064,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"Driver Certification - Architet US",
+					"projectId":103818,
+					"department":"Informatics"
+				},
+				{
+					"projectName":"Electronics Embedded Development",
+					"projectId":103819,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"Purification Enhancement",
+					"projectId":108011,
+					"department":"Informatics"
+				},
+				{
+					"projectName":"Content Designer",
+					"projectId":104593,
+					"department":"Informatics"
+				},
+				{
+					"projectName":"Driver Certification",
+					"projectId":104005,
+					"department":"Informatics"
+				},
+      			{
+					"projectName":"MassLynx Clover",
+					"projectId":104700,
+					"department":"Informatics"
+				},
+      			{
+					"projectName":"Typhoon",
+					"projectId":104701,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"Wordpress development",
+					"projectId":105847,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"DevOps Offshore",
+					"projectId":105555,
+					"department":"NA"
+				},
+				{
+					"projectName":"Thermo Offshore",
+					"projectId":106766,
+					"department":"Informatics"
+				},
+				{
+					"projectName":"Thermo Onsite",
+					"projectId":106769,
+					"department":"Informatics"
+				},
+				{
+					"projectName":"OPC UA",
+					"projectId":106659,
+					"department":"Informatics"
+				},
+                {
+					"projectName":"Agilent Openlab Data Offshore",
+					"projectId":107213,
+					"department":"None"
+				},
+                {
+					"projectName":"Agilent OpenLab Data US",
+					"projectId":107211,
+					"department":"None"
+				},
+				{
+					"projectName":"Admin Coordinator",
+					"projectId":107613,
+					"department":"None"
+				},
+                {
+					"projectName":"Microapp",
+					"projectId":106768,
+					"department":"None"
+				},
+                {
+					"projectName":"EDGE Testing",
+					"projectId":107939,
+					"department":"None"
+				},
+				{
+					"projectName":"AME",
+					"projectId":109000,
+					"department":"None"
+				},
+				
+				{
+					"projectName":"Wyatt",
+					"projectId":110266,
+					"department":"None"
+				},
+				{
+					"projectName":"Brucker",
+					"projectId":108932,
+					"department":"None"
+				},				
+                {
+					"projectName":"Not Assigned",
+					"projectId":0,
+					"department":"None"
+				}
+
+
+	],
+	"EmployeeLevelDetails":[
+		{
+			"levelName":"Associate Software Engineer",
+			"levelId":1
+		},
+		{
+			"levelName":"Software Engineer",
+			"levelId":2
+		},
+		{
+			"levelName":"Senior Software Engineer",
+			"levelId":3
+		},
+		{
+			"levelName":"Module Lead",
+			"levelId":4
+		},
+		{
+			"levelName":"Team Lead",
+			"levelId":5
+		},
+		{
+			"levelName":"Associate Manager",
+			"levelId":6
+		},
+		{
+			"levelName":"Manager",
+			"levelId":7
+		},
+		{
+			"levelName":"Senior Manager",
+			"levelId":8
+		}
+
+],
+    "waters holidays":[
+		            {
+                      "day":"Republic Day",
+                      "date":"26/01/2023",
+                      "weekday":"Thu"
+                    },
+					{
+                      "day":"Ugadi/Gudi Padwa",
+                      "date":"22/03/2023",
+                      "weekday":"Wed"
+                    },
+					{
+						"day":"May/Labour Day",
+						"date":"01/05/2023",
+						"weekday":"Mon"
+					}, 
+					{
+                      "day":"Independence Day",
+                      "date":"10/09/2023",
+                      "weekday":"Tue"
+                    }, 	
+                    {
+                      "day":"Ganesh Chaturthi",
+                      "date":"19/09/2023",
+                      "weekday":"Tue"
+                    },
+                    {
+                      "day":"Gandhi Jayanthi",
+                      "date":"02/10/2023",
+                      "weekday":"Mon"
+                    },
+                    {
+                      "day":"Maha Navami, Ayudhapooja",
+                      "date":"23/10/2023",
+                      "weekday":"Mon"
+                    },
+                    {
+                      "day":"VijayaDashmi/Dussehra",
+                      "date":"24/10/2023",
+                      "weekday":"Tue"
+                    },
+		            {
+                      "day":"Kannada Rajyothsava",
+                      "date":"01/11/2023",
+                      "weekday":"Wed"
+                    },
+					{
+						"day":"Deepavali. Balipadyami / Bhai Dhuj",
+						"date":"14/11/2023",
+						"weekday":"Tue"
+					}
+
+               ],
+    "ManagersList":[
+                    {
+                      "Name":"Raju Hiremath",
+                      "EmployeeID":"2343697",
+                      "CorpID":"conrhi",
+                      "Mail":"Raju.Hiremath@mphasis.com"
+                    },
+                    {
+                      "Name":"Arunagiri S",
+                      "EmployeeID":"2059584",
+                      "CorpID":"conasub",
+                      "Mail":"Arunagiri.S@mphasis.com"
+                    },
+                    {
+                      "Name":"Ethirajalu Gopi",
+                      "EmployeeID":"2059481",
+                      "CorpID":"congeth",
+                      "Mail":"Ethirajulu.Gopi@mphasis.com"
+                    },
+                    {
+                      "Name":"Sridhar Sohan",
+                      "EmployeeID":"2175540",
+                      "CorpID":"consso",
+                      "Mail":"Sridhar.Sohan@mphasis.com"
+                    },
+                    {
+                      "Name":"Syamkumar S",
+                      "EmployeeID":"2092160",
+                      "CorpID":"consys",
+                      "Mail":"Syamkumar.S@mphasis.com"
+                    },
+                    {
+                      "Name":"Vinay Mishra",
+                      "EmployeeID":"2118434",
+                      "CorpID":"convmis",
+                      "Mail":"Vinay.Mishra@mphasis.com"
+                    },
+                    {
+                      "Name":"Raviraj Harti",
+                      "EmployeeID":"2059083",
+                      "CorpID":"conravh",
+                      "Mail":"Raviraj.N@mphasis.com"
+                    },
+                    {
+                      "Name":"Pooja R",
+                      "EmployeeID":"2362735",
+                      "CorpID":"conpoor",
+                      "Mail":"pooja.r1@mphasis.com"
+                    },
+                    {
+                      "Name":"Vadiraj Bhat",
+                      "EmployeeID":"2060134",
+                      "CorpID":"convbha",
+                      "Mail":"Vadiraj.Bhat@mphasis.com"
+                    },					
+                    {
+                      "Name":"Shilpa CM",
+                      "EmployeeID":"2061911",
+                      "CorpID":"conshcm",
+                      "Mail":"Shilpa.cm@mphasis.com"
+                    },
+                    {
+                      "Name":"Arun Kumar",
+                      "EmployeeID":"2107732",
+                      "CorpID":"conaku",
+                      "Mail":"arun.k03@mphasis.com"
+                    },
+					{
+                      "Name":"Sayan Bhowmik",
+                      "EmployeeID":"2372906",
+                      "CorpID":"consbho",
+                      "Mail":"sayan_bhowmik@waters.com"
+                    },
+										{
+                      "Name":"Himabindu",
+                      "EmployeeID":"2515937",
+                      "CorpID":"conhich",
+                      "Mail":"ch.himabindu@mphasis.com"
+                    },
+                    {
+                      "Name":"Rashmiprabha PD",
+                      "EmployeeID":"2343561",
+                      "CorpID":"conrabs",
+                      "Mail":"rashmiprabha.pd@mphasis.com"
+                    },
+					{
+						"Name":"Ajayakumar Managaon",
+						"EmployeeID":"2480014",
+						"CorpID":"conajma",
+						"Mail":"ajayakumar.managaon@mphasis.com"
+					},
+					{
+                      "Name":"Surendra Reddy RV",
+                      "EmployeeID":"2549190",
+                      "CorpID":"consurv",
+                      "Mail":"surendra.rv@mphasis.com"
+                    },
+					{
+                      "Name":" Dinesh Kumar P",
+                      "EmployeeID":"2549531",
+                      "CorpID":"condkp",
+                      "Mail":"Dinesh.P2@Mphasis.com"
+                    },
+					{
+						"Name":"Purva",
+						"EmployeeID":"corppub",
+						"CorpID":"conajma",
+						"Mail":"purva.bhageria@mphasis.com"
+					},
+					{
+						"Name":" Sushitha Shetty",
+						"EmployeeID":"2432535",
+						"CorpID":"consshet",
+						"Mail":"sushitha.shetty@mphasis.com"
+					},
+					{
+						"Name":"  Prasannajeet S",
+						"EmployeeID":"2389564",
+						"CorpID":"conpts",
+						"Mail":"prasannajeet.s@mphasis.com"
+					},
+					{
+						"Name":"Raghavendra kagwad",
+						"EmployeeID":"2520011",
+						"CorpID":"conraka",
+						"Mail":"raghavendra.kagwad@mphasis.com"
+					}
+					
+               ],
+	"OtherDeductions":[
+                    {
+					  "TypeOfDeduction": "Food Deductions",
+					  "MinimumWorkDays": "7",
+                      "PaymentRecovery":"Recovery",
+                      "Amount":"1,200",
+					  "PaymentRecoveryTowards": "Miscellaneous Bonus(15BD)",
+                      "LetterToBeIssued":"Yes",
+                      "ApprovalAttached":"Yes",
+					  "NameOftheAttachment": "Approval for Other Deductions for Waters India.xps",
+					  "ApproverName": "Sujit Sudhaman",
+					  "RemarksReason": "Other Deductions"
+                    }
+					]
+}

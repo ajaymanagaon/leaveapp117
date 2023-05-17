@@ -1,0 +1,226 @@
+{
+	"project details":[
+				{
+					"projectName":"CROW-CTC PAL 3 For MassLynx",
+					"projectId":94747,
+					"department":"MS ICS"
+				},
+				{
+					"projectName":"Empower Network Mapping Tool",
+					"projectId":95296,
+					"department":"Informatics"
+				},
+				{
+					"projectName":"IonLynx",
+					"projectId":96894,
+					"department":"Informatics"
+				},
+				{
+					"projectName":"MassLynx Applications",
+					"projectId":96934,
+					"department":"Informatics"
+				},
+				{
+					"projectName":"Purification MassLynx Enhancements",
+					"projectId":92597,
+					"department":"Separations"
+				},
+				{
+					"projectName":"Smoke Test Addendum for UNIFI",
+					"projectId":95521,
+					"department":"Informatics"
+				},
+				{
+					"projectName":"UNIFI LC",
+					"projectId":92596,
+					"department":"Separations"
+				},
+                {
+					"projectName":"New MassLynxNewIONSource",
+					"projectId":97098,
+					"department":"Separations"
+				},
+                {
+					"projectName":"UNIFI - MS ICS",
+					"projectId":92606,
+					"department":"MS ICS"
+				},
+                {
+					"projectName":"ICF Phase II",
+					"projectId":97985,
+					"department":"Informatics"
+				},				
+                {
+					"projectName":"ProteinSimple",
+					"projectId":97877,
+					"department":"other"
+				},
+				{
+					"projectName":"Onsite UK",
+					"projectId":100101,
+					"department":"None"
+				},
+                {
+					"projectName":"Onsite US",
+					"projectId":100102,
+					"department":"None"
+				},
+				{
+					"projectName":"Sciex 3rd Party CDS",
+					"projectId":102066,
+					"department":"Informatics"
+				},	
+				{
+					"projectName":"ICF Lab Manager CY2020",
+					"projectId":102010,
+					"department":"None"
+				},
+                {
+					"projectName":"Not Assigned",
+					"projectId":0,
+					"department":"None"
+				}
+
+
+	],
+    "waters holidays 2018":[
+                    {
+                      "day":"Republic Day",
+                      "date":"26/01/2018",
+                      "weekday":"Fri"
+                    },
+                    {
+                      "day":"May Day",
+                      "date":"01/05/2018",
+                      "weekday":"Tue"
+                    },
+                    {
+                      "day":"Independence Day",
+                      "date":"15/08/2018",
+                      "weekday":"Wed"
+                    },
+                    {
+                      "day":"Ganesh Chaturthi",
+                      "date":"15/09/2018",
+                      "weekday":"Sat"
+                    },
+                    {
+                      "day":"Gandhi Jayanthi",
+                      "date":"02/10/2018",
+                      "weekday":"Tue"
+                    },
+                    {
+                      "day":"Ayudha Pooja/Mahanavmi",
+                      "date":"18/10/2018",
+                      "weekday":"Thu"
+                    },
+                    {
+                      "day":"VijayaDashmi/Dussehra",
+                      "date":"19/10/2018",
+                      "weekday":"Fri"
+                    },
+                    {
+                      "day":"Kannada Rajyotsava",
+                      "date":"01/11/2018",
+                      "weekday":"Thu"
+                    },
+                    {
+                      "day":"Naraka Chaturdashi",
+                      "date":"06/11/2018",
+                      "weekday":"Tue"
+                    },
+                    {
+                      "day":"Balipadyami/Govardhan Pooja/Vikram Samvant New Year",
+                      "date":"08/11/2018",
+                      "weekday":"Thu"
+                    }
+               ],
+    "ManagersList":[
+                    {
+                      "Name":"Raju Hiremath",
+                      "EmployeeID":"2343697",
+                      "CorpID":"conrhi",
+                      "Mail":"Raju.Hiremath@mphasis.com"
+                    },
+                    {
+                      "Name":"Anant Piratla",
+                      "EmployeeID":"2060844",
+                      "CorpID":"conapi",
+                      "Mail":"Anant.Piratla@mphasis.com"
+                    },
+                    {
+                      "Name":"Arunagiri S",
+                      "EmployeeID":"2059584",
+                      "CorpID":"conasub",
+                      "Mail":"Arunagiri.S@mphasis.com"
+                    },
+                    {
+                      "Name":"Ethirajalu Gopi",
+                      "EmployeeID":"2059481",
+                      "CorpID":"congeth",
+                      "Mail":"Ethirajulu.Gopi@mphasis.com"
+                    },
+                    {
+                      "Name":"Sridhar Sohan",
+                      "EmployeeID":"2175540",
+                      "CorpID":"consso",
+                      "Mail":"Sridhar.Sohan@mphasis.com"
+                    },
+                    {
+                      "Name":"Noopur Gowande",
+                      "EmployeeID":"2343476",
+                      "CorpID":"conngo",
+                      "Mail":"Noopur.Gowande@mphasis.com"
+                    },
+                    {
+                      "Name":"Syamkumar S",
+                      "EmployeeID":"2092160",
+                      "CorpID":"consys",
+                      "Mail":"Syamkumar.S@mphasis.com"
+                    },
+                    {
+                      "Name":"Vinay Mishra",
+                      "EmployeeID":"2118434",
+                      "CorpID":"convmis",
+                      "Mail":"Vinay.Mishra@mphasis.com"
+                    },
+                    {
+                      "Name":"Dheeraj Dashora",
+                      "EmployeeID":"2343857",
+                      "CorpID":"conddas",
+                      "Mail":"Dheeraj.Dashora@mphasis.com"
+                    },
+                    {
+                      "Name":"Raviraj Harti",
+                      "EmployeeID":"2059083",
+                      "CorpID":"conravh",
+                      "Mail":"Raviraj.N@mphasis.com"
+                    },
+					{
+                      "Name":"Sayani Halder",
+                      "EmployeeID":"2356670",
+                      "CorpID":"conshal",
+                      "Mail":"sayani.halder@mphasis.com"
+                    },
+					{
+                      "Name":"Aravindkumar K",
+                      "EmployeeID":"2059076",
+                      "CorpID":"conakan",
+                      "Mail":"aravindkumar.k@mphasis.com"
+                    },
+                    {
+                      "Name":"Arun Kumar",
+                      "EmployeeID":"2107732",
+                      "CorpID":"conaku",
+                      "Mail":"arun.k03@mphasis.com"
+                    },
+                    {
+                      "Name":"Suhas Kulkarni",
+                      "EmployeeID":"2160068",
+                      "CorpID":"CONSUKUL",
+                      "Mail":"suhas.kulkarni@mphasis.com"
+                    }
+
+               ]
+
+}

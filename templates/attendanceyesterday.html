@@ -1,0 +1,508 @@
+{% extends "layout.html" %}
+{% block body %}
+<head>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+      
+</head>
+<div class = "container">
+    <div>
+        <h1>Attendance</h1>    
+        <a class="nav-link" style = "margin-left: 950px; margin-top: -10px;" id = "downloadreport" href="/downloadattendancereport">
+            <button>Export to Excel</button>
+        </a>
+        <div id = "attendanceByDay" style = "margin-left: 10px;margin-top: -30px; margin-bottom: 20px;">
+            <label style = "font-weight: bold;">Attendance By Day : </label>
+            <select id="attendanceByDayDropdownSelect"> 
+                <option value="yesterday">Yesterday</option>
+                <option value="today">Today</option>
+            </select>
+        </div>
+    </div>
+    <div class = "container">
+        <div id = "filterEmployeesByAttendanceType" style = "margin-left: -16px;">
+            <label class="radio-inline">
+              <input type="radio" name = "radioButton" id = "displayAllEmployees" value="All" checked><div style=" margin-left: 35px; margin-top: -18px;">All</div>
+            </label>
+            <label class="radio-inline" style = "margin-left: -25px;">
+                <input type="radio" name = "radioButton" id = "displayAtOfficeEmployees" value="AtOffice" ><div style=" margin-left: 60px; margin-top: -18px;">At Office</div>
+            </label> 
+            <label class="radio-inline" style = "margin-left: -36px;">
+                <input type="radio" name = "radioButton" id = "displaySickLeaveEmployees" value="SickLeave" ><div style=" margin-left: 70px; margin-top: -18px;">Sick Leave</div>
+            </label>
+            <label class="radio-inline" style = "margin-left: -47px;">
+                <input type="radio" name = "radioButton" id = "displayCasualLeaveEmployees" value="CasualLeave" ><div style=" margin-left: 80px; margin-top: -18px;">Casual Leave</div>
+            </label>
+            <label class="radio-inline" style = "margin-left: -10px;">
+                <input type="radio" name = "radioButton" id = "displayWfhLeaveEmployees" value="WFH"><div style=" margin-left: 45px; margin-top: -18px;">WFH</div>
+            </label>       
+        </div>
+        
+        <div id = "projectdropdown" style = "margin-left: 685px;margin-top: -30px">
+            <label style = "font-weight: bold;">Filter by Project : </label>
+            <select id="projectdropdownselect"> 
+                <option value="none">--Select Project--</option>
+            </select>
+        </div>
+    </div>
+    
+
+    <div class="row mt-2">
+        <div class="col-sm-12">
+            <table id="attendanceDetails" class="table table-striped table-hover" style="width:100%" >
+                 <thead>
+                     <tr>
+                        <th>Employee Id</th>
+                        <th>Employee Name</th>
+                        <th>Project Name</th>
+                        <th>At Office</th>
+                        <th>Sick Leave</th>
+                        <th>Casual Leave</th>
+                        <th>Work From Home</th>
+                        <th>Mark Attendance</th>
+                     </tr>
+                 </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="attendanceModal" tabindex="-1" role="dialog" aria-labelledby="attendanceModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	        <div class="modal-header">
+	            <h5 class="modal-title" id="attendanceModalLabel"><span>Mark Attendance</span></h5>
+	            <button type="button" class="close" data-dismiss="modal"  aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+	        </div>
+	        <div class="modal-body">
+                <form id = "attendanceForm" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="attendanceEmployeeId" maxlength="7"  placeholder="Employee ID" readonly required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="attendanceEmployeeName" maxlength="100" placeholder="Employee Name" readonly required/>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="font-size: 17px;font-weight: bold">At Office : </label>
+                        <label class="radio-inline" style = "margin-left : 37px">
+                            <input type="radio" name="attendanceAtOfficeradioButton" id="atOfficeFullDay" value = "Full Day"><div style="margin-left: 50px;margin-top: -18px;">Full Day</div>
+                        </label>
+                        <label class="radio-inline" style="margin-left: -20px;">
+                            <input type="radio" name="attendanceAtOfficeradioButton" id="atOfficeHalfDay" value = "Half Day"><div style="margin-left: 50px;margin-top: -18px;">Half Day</div>
+                        </label> 
+                        <label class="radio-inline" style="margin-left: 15px;">
+                            <input type="radio" name="attendanceAtOfficeradioButton" id="atOfficeNo" value = "No"><div style="margin-left: 25px;margin-top: -18px;">No</div>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="font-size: 17px;font-weight: bold">Sick Leave : </label>
+                        <label class="radio-inline" style = "margin-left : 28px">
+                            <input type="radio" name="attendanceSickLeaveradioButton" id="sickLeaveFullDay" value = "Full Day"><div style="margin-left: 50px;margin-top: -18px;">Full Day</div>
+                        </label>
+                        <label class="radio-inline" style="margin-left: -20px;">
+                            <input type="radio" name="attendanceSickLeaveradioButton" id="sickLeaveHalfDay" value = "Half Day"><div style="margin-left: 50px;margin-top: -18px;">Half Day</div>
+                        </label> 
+                        <label class="radio-inline" style="margin-left: 15px;">
+                            <input type="radio" name="attendanceSickLeaveradioButton" id="sickLeaveNo" value = "No"><div style="margin-left: 25px;margin-top: -18px;">No</div>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="font-size: 17px;font-weight: bold">Casual Leave : </label>
+                        <label class="radio-inline" style = "margin-left : 10px">
+                            <input type="radio" name="attendanceCasualLeaveradioButton" id="casualLeaveFullDay" value = "Full Day"><div style="margin-left: 50px;margin-top: -18px;">Full Day</div>
+                        </label>
+                        <label class="radio-inline" style="margin-left: -20px;">
+                            <input type="radio" name="attendanceCasualLeaveradioButton" id="casualLeaveHalfDay" value = "Half Day"><div style="margin-left: 50px;margin-top: -18px;">Half Day</div>
+                        </label> 
+                        <label class="radio-inline" style="margin-left: 15px;">
+                            <input type="radio" name="attendanceCasualLeaveradioButton" id="casualLeaveNo" value = "No"><div style="margin-left: 25px;margin-top: -18px;">No</div>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="font-size: 17px;font-weight: bold">Work From Home : </label>
+                        <label class="radio-inline" style = "margin-left : -30px">
+                            <input type="radio" name="attendancerWfhadioButton" id="atWfhFullDay" value = "Full Day"><div style="margin-left: 50px;margin-top: -18px;">Full Day</div>
+                        </label>
+                        <label class="radio-inline" style="margin-left: -20px;">
+                            <input type="radio" name="attendancerWfhadioButton" id="atWfhHalfDay" value = "Half Day"><div style="margin-left: 50px;margin-top: -18px;">Half Day</div>
+                        </label> 
+                        <label class="radio-inline" style="margin-left: 15px;">
+                            <input type="radio" name="attendancerWfhadioButton" id="atWfhNo" value = "No"><div style="margin-left: 25px;margin-top: -18px;">No</div>
+                        </label>
+                    </div>
+                    <button style = "margin-left: 365px; width: 100px" type="submit" id="btnUpdate" class=" btn btn-primary">Save</button>
+                </form>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="excelAttendanceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	        <div class="modal-header">
+	            <h5 class="modal-title" id="exampleModalLabel"><span>Mark Attendance</span></h5>
+	            <button type="button" class="close" data-dismiss="modal"  aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+	        </div>
+	        <div class="modal-body">
+                <span>File downloaded and saved in folder "C:\Attendance"!</span>
+                <button style = "margin-left: 365px; width: 100px"  data-dismiss="modal"  aria-label="Close" id="btnUpdate" class="btn btn-primary">Ok</button>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        //bind project details dropdown
+        urlFinal = 'projectnames'
+        $.ajax({
+            url: '/' + urlFinal,
+            type: 'GET',
+            success: function (response) {
+                $.each(response , function(key, value){
+                    $("#projectdropdownselect").append($("<option></option>").val(key).html(value));
+                })
+            },
+            error: function (jqXHR, error) {
+                console.log(error)
+            },
+            complete: function () {
+            }
+        })
+
+
+        //get employees from the datatable in the json format
+        var attendanceTable = $('#attendanceDetails').DataTable({
+                "ajax": {
+                    "url": '/' + 'attendanceemployeesyesterday',
+                    "dataSrc": ""
+                },
+                "columns" : [
+                        {'data' : 'EmployeeId'},
+                        {'data' : 'EmployeeName'},
+                        {'data' : 'ProjectName'},
+                        {'data' : 'AtOffice'},
+                        {'data' : 'SickLeave'},
+                        {'data' : 'CasualLeave'},
+                        {'data' : 'WorkFromHome'},
+                        {
+                            'data' : null,
+                            render: function (data, type, row) {
+                                return "<button type='button' id='addAttendanceButton' class='btn btn-info'><i class='fas fa-pencil-alt'></i></button>";
+                            }
+                        },
+                    ]
+            });
+
+
+        //Adding Attendance for Yesterday and Today
+        $("#attendanceByDayDropdownSelect").change(function() {
+            var attendanceDayDropdownValue = $("#attendanceByDayDropdownSelect option:selected");
+            var attendanceDay = attendanceDayDropdownValue[0].value
+            if (attendanceDay == 'today'){
+                window.location.href = '/attendance'
+            }
+        });
+        //Save Attendance in table
+        $('#attendanceForm').submit(function(){
+            var attendanceDayDropdownValue = $("#attendanceByDayDropdownSelect option:selected");
+            var attendanceDay = attendanceDayDropdownValue[0].value
+            employeeId = $('#attendanceEmployeeId').val()
+            atOffice = $('input[name=attendanceAtOfficeradioButton]:checked', '#attendanceForm').val()
+            sickLeave = $('input[name=attendanceSickLeaveradioButton]:checked', '#attendanceForm').val()
+            casualLeave = $('input[name=attendanceCasualLeaveradioButton]:checked', '#attendanceForm').val()
+            workFromHome = $('input[name=attendancerWfhadioButton]:checked', '#attendanceForm').val()
+    
+            var arrayOfLeaves = [];
+            arrayOfLeaves.push(atOffice)
+            arrayOfLeaves.push(sickLeave)
+            arrayOfLeaves.push(casualLeave)
+            arrayOfLeaves.push(workFromHome)
+
+            if (!validateLeavesBeforeSbumitting(arrayOfLeaves)) {
+                event.preventDefault();
+                return false
+            };
+
+            urlFinal = 'saveattendance' + '/' + attendanceDay
+    
+            $.ajax({
+                url: '/' + urlFinal,
+                type: 'POST',
+                data: {
+                    'employeeId': employeeId,
+                    'atOffice': atOffice,
+                    'sickLeave' : sickLeave,
+                    'casualLeave': casualLeave,
+                    'workFromHome': workFromHome
+                },
+                success: function (response) {
+                    attendanceTable.ajax.reload(null, false);
+                    $('#attendanceModal').modal('hide');
+                },
+                error: function (jqXHR, error) {
+                    toastr.error(error);
+                },
+                complete: function () {
+
+                }
+            })
+        })  
+    });
+
+
+    //Function to validate the number of full day or half day in List
+    function validateLeavesBeforeSbumitting(arrayOfLeaves){
+        var occurrences = { };
+        for (var i = 0, j = arrayOfLeaves.length; i < j; i++) {
+           occurrences[arrayOfLeaves[i]] = (occurrences[arrayOfLeaves[i]] || 0) + 1;
+        }
+        fullDayOccurance = occurrences['Full Day']
+        halfDayOccurance = occurrences['Half Day']
+        noOccurance = occurrences['No']
+
+        if(fullDayOccurance > 1){
+            toastr.error('There can only be one Full Day. Please correct the changes and submit')
+            return false
+        }
+        if(halfDayOccurance > 2){
+            toastr.error('There can only be two Half Days. Please correct the changes and submit')
+            return false
+        }
+        if(halfDayOccurance == 2 && fullDayOccurance == 1){
+            toastr.error('There cannot be one Full Day and Two Half Days. Please correct the changes and Proceed')
+            return false
+        }
+        if(halfDayOccurance == 1 && fullDayOccurance == 1){
+            toastr.error('There cannot be one Full Day and One Half Day. Please correct the changes and Proceed')
+            return false
+        }
+        if(halfDayOccurance == 1){
+            toastr.error('There is only one half day attendance. Please add other Half Day attendance')
+            return false
+        }
+        if(noOccurance == 4){
+            toastr.error('Changes cannot be saved. Please select atleast one Full Day.')
+            return false
+        }
+        return true
+    }
+
+    //Filtering out all the employees. At Office, Work From home, Sick Leave and Casual Leave, this method is invoked on click of radio vuttons
+    $('#filterEmployeesByAttendanceType input:radio').on('change', function () {
+        var attendanceTable = $('#attendanceDetails').DataTable();
+        attendanceTable.search( '' ).columns().search( '' ).draw();
+        
+        var position = $('input:radio[name="radioButton"]:checked').map(function() {
+          return this.value;
+        });            
+        var searchColumn = position.prevObject[0]['id'];
+        var value = $("#projectdropdownselect option:selected");
+        searchEmployeeswithProject = value.text();
+        if(searchEmployeeswithProject){
+            filterByAttendanceType(searchColumn, attendanceTable)
+            if(searchEmployeeswithProject != '' && searchEmployeeswithProject != '--Select Project--'){
+                attendanceTable.column(2).search(searchEmployeeswithProject, true, false, false).draw(false);
+            } 
+        }else{
+            filterByAttendanceType(searchColumn, attendanceTable)
+        }   
+    });
+
+    function filterByAttendanceType(searchColumn, attendanceTable){
+        if(searchColumn == "displayAtOfficeEmployees"){
+            searchText = "Full Day|Half Day"
+            attendanceTable.column(3).search(searchText, true, false).draw();
+        }
+        if(searchColumn == "displaySickLeaveEmployees"){
+            searchText = "Full Day|Half Day"
+            attendanceTable.column(4).search(searchText, true, false).draw(false);
+        }
+        if(searchColumn == "displayCasualLeaveEmployees"){
+            searchText = "Full Day|Half Day"
+            attendanceTable.column(5).search(searchText, true, false).draw(false);
+        }
+        if(searchColumn == "displayWfhLeaveEmployees"){
+            searchText = "Full Day|Half Day"
+            attendanceTable.column(6).search(searchText, true, false).draw(false);
+        }
+    }
+
+    //open the modal on mark attendance column. Setting all the values to default with the values in the database.
+    $("#attendanceDetails").on("click","#addAttendanceButton",function(){
+        $("#attendanceForm").trigger("reset");
+        var tr=$(this).closest("tr").children();
+        rowData =  $("#attendanceDetails").dataTable().fnGetData(tr);
+        var employeeId = rowData.EmployeeId;
+        var employeeName = rowData.EmployeeName.replaceAll(" ",'');
+        $("#attendanceEmployeeId").val(employeeId);
+        $("#attendanceEmployeeName").val(employeeName);
+
+        var atOffice = rowData.AtOffice;
+        var sickLeave = rowData.SickLeave;
+        var casualLeave = rowData.CasualLeave;
+        var wfh = rowData.WorkFromHome
+
+
+
+        $('input:radio[name="attendanceAtOfficeradioButton"]').filter('[value="' + atOffice + '"]').prop('checked', true);
+        $('input:radio[name="attendanceSickLeaveradioButton"]').filter('[value="' + sickLeave + '"]').prop('checked', true);
+        $('input:radio[name="attendanceCasualLeaveradioButton"]').filter('[value="' + casualLeave + '"]').prop('checked', true);
+        $('input:radio[name="attendancerWfhadioButton"]').filter('[value="' + wfh + '"]').prop('checked', true);
+
+        $('#attendanceModal').modal('show');
+    });
+
+
+    //onchange of project dropwn filter employees
+    $("#projectdropdownselect").change(function() {
+        var selectedAttendanceType = $("#filterEmployeesByAttendanceType input[type='radio']:checked");
+        var selectedAttendanceValue = selectedAttendanceType[0].value;
+
+        var attendanceTable = $('#attendanceDetails').DataTable();
+        attendanceTable.search( '' ).columns().search( '' ).draw();
+        var value = $("#projectdropdownselect option:selected");
+
+
+        searchEmployeeswithProject = value.text();
+        if(searchEmployeeswithProject != '--Select Project--'){
+            attendanceTable.column(2).search(searchEmployeeswithProject, true, false, false).draw(false); 
+            if(selectedAttendanceValue == 'AtOffice'){
+                filterByAttendanceType("displayAtOfficeEmployees", attendanceTable)
+            }
+            if(selectedAttendanceValue == 'SickLeave'){
+                filterByAttendanceType("displaySickLeaveEmployees", attendanceTable)
+            }
+            if(selectedAttendanceValue == 'CasualLeave'){
+                filterByAttendanceType("displayCasualLeaveEmployees", attendanceTable)
+            }
+            if(selectedAttendanceValue == 'WFH'){
+                filterByAttendanceType("displayWfhLeaveEmployees", attendanceTable)
+            }            
+        }
+        else
+        {
+            if(selectedAttendanceValue)
+            {
+                if(selectedAttendanceValue == 'AtOffice'){
+                filterByAttendanceType("displayAtOfficeEmployees", attendanceTable)
+                }
+                if(selectedAttendanceValue == 'SickLeave'){
+                filterByAttendanceType("displaySickLeaveEmployees", attendanceTable)
+                }
+                if(selectedAttendanceValue == 'CasualLeave'){
+                filterByAttendanceType("displayCasualLeaveEmployees", attendanceTable)
+                }
+                if(selectedAttendanceValue == 'WFH'){
+                filterByAttendanceType("displayWfhLeaveEmployees", attendanceTable)
+                }  
+            }
+            else
+            {
+                attendanceTable.search( '' ).columns().search( '' ).draw();
+            }
+        }
+    });
+
+    
+
+    //Setting all other radio buttons to 'No' when we hoose any one full day
+    $('#attendanceForm input:radio[name="attendanceAtOfficeradioButton"]').on('change', function () {
+        var AtOfficeradio = $('input:radio[name="attendanceAtOfficeradioButton"]:checked').map(function() {
+            return this.value;
+        });
+        if(AtOfficeradio[0] == 'Full Day'){
+            $("#sickLeaveFullDay").prop('checked', false);
+            $('#casualLeaveFullDay').prop('checked', false);
+            $("#atWfhFullDay").prop('checked', false);
+
+            $('#sickLeaveNo').prop('checked', true);
+            $('#casualLeaveNo').prop('checked', true);
+            $('#atWfhNo').prop('checked', true);
+        }
+    });
+
+    $('#attendanceForm input:radio[name="attendanceSickLeaveradioButton"]').on('change', function () {
+        var SickLeaveRadio = $('input:radio[name="attendanceSickLeaveradioButton"]:checked').map(function() {
+            return this.value;
+        });
+        if(SickLeaveRadio[0] == 'Full Day'){
+            $("#atOfficeFullDay").prop('checked', false);
+            $('#casualLeaveFullDay').prop('checked', false);
+            $("#atWfhFullDay").prop('checked', false);
+
+            $('#atOfficeNo').prop('checked', true);
+            $('#casualLeaveNo').prop('checked', true);
+            $('#atWfhNo').prop('checked', true);
+        }
+    });
+
+    $('#attendanceForm input:radio[name="attendanceCasualLeaveradioButton"]').on('change', function () {
+        var CasualLeaveRadio = $('input:radio[name="attendanceCasualLeaveradioButton"]:checked').map(function() {
+            return this.value;
+        });
+        if(CasualLeaveRadio[0] == 'Full Day'){
+            $("#sickLeaveFullDay").prop('checked', false);
+            $('#atOfficeFullDay').prop('checked', false);
+            $("#atWfhFullDay").prop('checked', false);
+
+            $('#sickLeaveNo').prop('checked', true);
+            $('#atOfficeNo').prop('checked', true);
+            $('#atWfhNo').prop('checked', true);
+        }
+    });
+
+    $('#attendanceForm input:radio[name="attendancerWfhadioButton"]').on('change', function () {
+        var Wfhradio = $('input:radio[name="attendancerWfhadioButton"]:checked').map(function() {
+            return this.value;
+        }); 
+        if(Wfhradio[0] == 'Full Day'){
+            $("#sickLeaveFullDay").prop('checked', false);
+            $('#atOfficeFullDay').prop('checked', false);
+            $("#casualLeaveFullDay").prop('checked', false);
+
+            $('#sickLeaveNo').prop('checked', true);
+            $('#casualLeaveNo').prop('checked', true);
+            $('#atOfficeNo').prop('checked', true);
+        }
+    });
+
+    //Downloading the attendace sheet in the form of excel
+    $('#downloadAttendance').click(function(){
+        urlFinal = 'downloadattendancereport'
+        $.ajax({
+            url: '/' + urlFinal,
+            type: 'GET',
+            success: function (response) {
+                if(response == "Ok"){
+                    $('#excelAttendanceModal').modal({
+                        show : true
+                    })
+                }
+                if(response == "error"){
+                    toastr.error("Error while downloading file. If the file is open, please close it and then try", { fadeAway: 4000 })
+                }
+            },
+            error: function (jqXHR, error) {
+                console.log(error)
+            },
+            complete: function () {
+            }
+        })
+    })
+    
+
+</script>
+
+{% endblock %}
